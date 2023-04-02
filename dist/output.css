@@ -977,7 +977,6 @@ video {
 
 .carousel-img {
   height: 40vh;
-  width: auto;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -986,6 +985,10 @@ video {
   .carousel-img {
     height: 60vh;
   }
+}
+
+.carousel-img {
+  width: auto!important;
 }
 
 blockquote::before, blockquote::after {
