@@ -39,7 +39,8 @@ video {
 }
 
 .carousel-img {
-    @apply h-[40vh] w-auto lg:h-[60vh] object-cover;
+    @apply h-[40vh] lg:h-[60vh] object-cover;
+    width: auto!important;
 }
 
 
