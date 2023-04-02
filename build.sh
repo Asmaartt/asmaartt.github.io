@@ -1,4 +1,5 @@
 mkdir -p public
+touch public/.nojekyll
 npx tailwindcss -i ./src/input.css -o ./dist/output.css
 cp -r dist/ public/dist
 cp script.js public/script.js
