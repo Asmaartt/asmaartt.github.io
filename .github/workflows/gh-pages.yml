@@ -13,6 +13,8 @@ jobs:
           node-version: '16'
           cache: 'npm'
       - run: npm install
+      - run: npm install js-yaml --save -g
+      - run: npm install ejs --save -g
       - run: source build.sh
 
       - uses: JamesIves/github-pages-deploy-action@4.1.5
