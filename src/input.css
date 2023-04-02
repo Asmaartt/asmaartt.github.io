@@ -1,0 +1,82 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    font-family: 'Marcellus', serif;
+    color: #333333;
+}
+
+
+
+nav {
+    background-color: #cdac8c;
+}
+
+h1, h2 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+video {
+    outline: 0;
+}
+
+#menu > a {
+    @apply text-lg;
+    @apply lg:text-sm;
+    @apply pt-4;
+    @apply block;
+    @apply uppercase;
+    @apply m-0;
+    @apply lg:ml-8;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
+.carousel-img {
+    @apply h-[40vh] w-auto lg:h-[60vh] object-cover;
+}
+
+
+
+blockquote::before, blockquote::after {
+    color: #c6c6c6;
+    font-size: 2em;
+    font-weight: 400;
+    line-height: 0.1em;
+}
+
+blockquote:before,
+blockquote:after {
+    @apply text-6xl md:text-9xl;
+    position: absolute;
+    color: #4b3333;
+    font-size: 8rem;
+    width: 4rem;
+    height: 4rem;
+}
+
+blockquote:before {
+    content: '“';
+    left: -5rem;
+    top: -2rem;
+}
+
+blockquote:after {
+    content: '”';
+    right: -5rem;
+    bottom: 1rem;
+}
+
+
+.container {
+    overflow: auto;
+    display: flex;
+    scroll-snap-type: x mandatory;
+}
+
+.feedback {
+    background-color: rgba(255, 255, 255, 0.75);
+    border-radius: 3rem;
+}
+

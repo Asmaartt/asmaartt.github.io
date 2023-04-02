@@ -1,0 +1,50 @@
+text: Welcome to our art gallery! We are proud to showcase a diverse collection of paintings from talented artists around the world. From stunning landscapes to beautiful floral paintings, our collection offers something for everyone. Take your time browsing through our exhibits and feel free to ask our knowledgeable staff any questions you may have. Whether you are a seasoned collector or a first-time art buyer, we are here to help you find the perfect piece to add to your collection. Thank you for visiting our gallery!
+paints:
+  - name: Blue Sky
+    price: 50
+    description: This paint captures the essence of a bright blue sky on a clear day. Its smooth texture makes it easy to work with and perfect for both beginners and professionals alike.
+    size: 24"x36"
+    pictures:
+      - https://source.unsplash.com/random/864x1080?sig=1231
+      - https://source.unsplash.com/random/864x1080?sig=1232
+      - https://source.unsplash.com/random/864x1080?sig=1233
+  - name: Sunset Glow
+    price: 75
+    description: Bring the warmth and beauty of a sunset into your artwork with this vibrant paint. Its rich pigment and velvety texture make it a pleasure to work with.
+    size: 30"x40"
+    pictures:
+      - https://source.unsplash.com/random/864x1080?sig=1234
+      - https://source.unsplash.com/random/864x1080?sig=1235
+      - https://source.unsplash.com/random/864x1080?sig=1236
+  - name: Forest Green
+    price: 60
+    description: This deep green paint is perfect for capturing the lush beauty of a forest. Its thick consistency allows for easy blending and layering, making it a great choice for creating depth and dimension in your artwork.
+    size: 18"x24"
+    pictures:
+      - https://source.unsplash.com/random/864x1080?sig=1237
+      - https://source.unsplash.com/random/864x1080?sig=1238
+      - https://source.unsplash.com/random/864x1080?sig=1239
+  - name: Golden Sunset
+    price: 90
+    description: The warm, golden tones of this paint capture the beauty of a sunset in all its glory. Its smooth texture and high-quality pigment make it a great choice for creating stunning landscape paintings.
+    size: 36"x48"
+    pictures:
+      - https://source.unsplash.com/random/864x1080?sig=12310
+      - https://source.unsplash.com/random/864x1080?sig=12311
+      - https://source.unsplash.com/random/864x1080?sig=12312
+  - name: Ocean Blue
+    price: 55
+    description: Create stunning seascapes and beach scenes with this beautiful blue paint. Its smooth consistency and high-quality pigment make it perfect for capturing the beauty of the ocean and sky.
+    size: 24"x30"
+    pictures:
+      - https://source.unsplash.com/random/864x1080?sig=12313
+      - https://source.unsplash.com/random/864x1080?sig=12314
+      - https://source.unsplash.com/random/864x1080?sig=12315
+  - name: Cherry Blossom
+    price: 70
+    description: The delicate pink hues of this paint capture the beauty of cherry blossoms in full bloom. Its smooth texture and vibrant color make it a great choice for creating beautiful floral paintings.
+    size: 16"x20"
+    pictures:
+      - https://source.unsplash.com/random/864x1080?sig=12316
+      - https://source.unsplash.com/random/864x1080?sig=12317
+      - https://source.unsplash.com/random/864x1080?sig=12318

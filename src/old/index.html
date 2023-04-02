@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/dist/output.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/node_modules/owl.carousel/dist/assets/owl.carousel.min.css" />
+
+    <style>
+        body {
+            /* Location of the image */
+            background-image: url(/background.png);
+            /* Background image is centered vertically and horizontally at all times */
+            background-position: bottom center;
+            /* Background image doesn’t tile */
+            background-repeat: no-repeat;
+            /* Background image is fixed in the viewport so that it doesn’t move when the content’s height is greater than the image’s height */
+            /*background-attachment: fixed; !* This is what makes the background image rescale based on the container’s size *!*/
+            background-size: cover; /* Set a background color that will be displayed while the background image is loading */
+        }
+    </style>
+</head>
+<body>
+
+<nav class="container flex flex-wrap justify-between lg:bg-transparent p-4 mx-auto max-w-full sticky top-0 lg:relative z-50">
+    <div>
+        <img src="/logo.png" class="h-10">
+<!--        <h3 class="text-2xl font-medium">ASMAART.</h3>-->
+    </div>
+
+    <div class="flex lg:hidden my-auto">
+        <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-6 h-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                onclick="toggleMenu()"
+        >
+            <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h16M4 18h16"
+            />
+        </svg>
+    </div>
+    <div class="w-full lg:hidden"></div>
+    <div id="menu" class="hidden lg:flex my-auto mx-auto lg:mx-0">
+        <a></a>
+        <a href="#">Galerie</a>
+        <a href="#">Peinture personnalisée</a>
+        <a href="#">Contact</a>
+        <div class="flex justify-around pt-2 text-2xl">
+            <a><i class="fa-brands fa-instagram lg:ml-8"></i></a>
+            <a><i class="fa-regular fa-envelope lg:ml-8"></i></a>
+        </div>
+    </div>
+</nav>
+
+
+<main class="relative text-white">
+    <div class="">
+        <img src="/logo.png" class="mx-auto w-3/5 md:w-1/2 max-w-lg p-4">
+        <div class="mx-auto w-3/5 md:w-1/2 max-w-lg border-b-2"></div>
+        <h1 class="text-lg md:text-2xl lg:text-4xl font-bold text-center pt-4 pb-8 px-2 uppercase font-light">
+             Artiste Peintre Autodidacte
+        </h1>
+    </div>
+
+
+    <div class="flex flex-col lg:flex-row lg:flex-row-reverse">
+        <div class="lg:w-1/2">
+            <img src="/profile.jpeg" class="px-24 pb-4 mx-auto lg:py-10 max-w-sm lg:max-w-xl" style="border-radius: 50%">
+        </div>
+        <div class="lg:w-1/2 text-center text-lg lg:text-xl m-auto px-8 lg:pl-32 lg:pr-0">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus suscipit, orci a cursus pretium, nisi urna egestas sapien, ac molestie purus erat vitae neque. Nam condimentum fermentum elit, vitae maximus magna interdum nec. Aenean ut rutrum turpis. Suspendisse eget eros a urna maximus pulvinar. Phasellus nec leo orci. In eget mollis nisi. Cras pretium magna quis aliquet suscipit. Mauris vel orci blandit, mollis eros vitae, malesuada lorem. Suspendisse potenti.
+        </div>
+    </div>
+
+    <div>
+        <div id="main-carousel" class="owl-carousel owl-theme py-4">
+            <div><img class="carousel-img" src="/1.jpeg"></div>
+            <div><img class="carousel-img" src="/2.jpeg"></div>
+            <div><img class="carousel-img" src="/3.jpeg"></div>
+            <div><img class="carousel-img" src="/4.jpeg"></div>
+        </div>
+    </div>
+
+    <div id="review-carousel" class="owl-carousel owl-theme relative">
+
+        <div class="w-screen">
+            <div class="flex flex-col md:flex-row items-center mx-2 md:mx-10 lg:mx-52 px-10 py-4 feedback">
+                <div class="md:w-1/4">
+                    <img src="/placeholder.jpeg" alt="Customer Image" class="rounded-full h-full w-full max-w-[10rem] md:max-w-[16rem] object-cover p-4">
+                </div>
+                <div class="w-3/4 px-8 md:px-11">
+                    <div class="mb-2">
+                        <h3 class="text-3xl font-semibold">John Doe</h3>
+                        <p class="text-gray-600">New York, NY</p>
+                    </div>
+                    <div class="md:text-xl text-gray-800 relative">
+                        <blockquote>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed gravida ipsum euismod lacus ultricies, eu facilisis leo fermentum. Sed blandit aliquet velit eget pharetra. Nam nec fermentum risus. Suspendisse potenti. In scelerisque elit quam, eu sagittis mauris lobortis id. Donec eu sapien mauris. Maecenas vel felis sed mauris suscipit vulputate. Duis tempor arcu vel quam malesuada, id finibus neque laoreet. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</blockquote>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="w-screen">
+            <div class="flex flex-col md:flex-row items-center mx-2 md:mx-10 lg:mx-52">
+                <div class="md:w-1/4">
+                    <img src="/placeholder.jpeg" alt="Customer Image" class="rounded-full h-full w-full max-w-[10rem] md:max-w-[16rem] object-cover p-4">
+                </div>
+                <div class="w-3/4 px-8 md:px-11">
+                    <div class="mb-2">
+                        <h3 class="text-3xl font-semibold">John Doe</h3>
+                        <p class="text-gray-600">New York, NY</p>
+                    </div>
+                    <div class="md:text-xl text-gray-800 relative">
+                        <blockquote>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed gravida ipsum euismod lacus ultricies, eu facilisis leo fermentum. Sed blandit aliquet velit eget pharetra. Nam nec fermentum risus. Suspendisse potenti. In scelerisque elit quam, eu sagittis mauris lobortis id. Donec eu sapien mauris. Maecenas vel felis sed mauris suscipit vulputate. Duis tempor arcu vel quam malesuada, id finibus neque laoreet. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</blockquote>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="w-screen">
+            <div class="flex flex-col md:flex-row items-center mx-2 md:mx-10 lg:mx-52">
+                <div class="md:w-1/4">
+                    <img src="/placeholder.jpeg" alt="Customer Image" class="rounded-full h-full w-full max-w-[10rem] md:max-w-[16rem] object-cover p-4">
+                </div>
+                <div class="w-3/4 px-8 md:px-11">
+                    <div class="mb-2">
+                        <h3 class="text-3xl font-semibold">John Doe</h3>
+                        <p class="text-gray-600">New York, NY</p>
+                    </div>
+                    <div class="md:text-xl text-gray-800 relative">
+                        <blockquote>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed gravida ipsum euismod lacus ultricies, eu facilisis leo fermentum. Sed blandit aliquet velit eget pharetra. Nam nec fermentum risus. Suspendisse potenti. In scelerisque elit quam, eu sagittis mauris lobortis id. Donec eu sapien mauris. Maecenas vel felis sed mauris suscipit vulputate. Duis tempor arcu vel quam malesuada, id finibus neque laoreet. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</blockquote>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="mt-10">
+        <h2 class="text-lg md:text-2xl lg:text-4xl font-bold text-center pt-4 pb-8 px-2 uppercase font-light">
+            CONTACT
+        </h2>
+        <p class="p-4 lg:px-32 text-center">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus suscipit, orci a cursus pretium, nisi urna egestas sapien, ac molestie purus erat vitae neque. Nam condimentum fermentum elit, vitae maximus magna interdum nec. Aenean ut rutrum turpis. Suspendisse eget eros a urna maximus pulvinar. Phasellus nec leo orci. In eget mollis nisi. Cras pretium magna quis aliquet suscipit.
+        </p>
+    </div>
+
+    <form action="https://formspree.io/f/your-formspree-form-id" method="POST" class="p-4 lg:px-32 lg:pb-10">
+        <div class="flex flex-wrap mb-6">
+            <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+                <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="name">
+                    Name
+                </label>
+                <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="name" name="name" type="text" required>
+            </div>
+            <div class="w-full md:w-1/2 px-3">
+                <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="email">
+                    Email
+                </label>
+                <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="email" name="_replyto" type="email" required>
+            </div>
+        </div>
+        <div class="mb-6">
+            <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="message">
+                Message
+            </label>
+            <textarea class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="message" name="message" rows="6" required></textarea>
+        </div>
+        <div class="flex justify-center">
+            <button class="bg-gray-800 text-white hover:bg-gray-900 py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="submit">
+                Send
+            </button>
+        </div>
+    </form>
+
+
+</main>
+
+<script src="https://kit.fontawesome.com/e04d7c62a8.js" crossorigin="anonymous"></script>
+<script src="/node_modules/jquery/dist/jquery.js"></script>
+<script src="/node_modules/owl.carousel/dist/owl.carousel.min.js"></script>
+<script src="../../script.js"></script>
+</body>
+</html>
