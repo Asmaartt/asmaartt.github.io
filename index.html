@@ -59,8 +59,8 @@
 <!--    <a href="#">Peinture personnalisée</a>-->
     <a href="#contact">Contact</a>
     <div class="flex justify-around pt-2 text-2xl">
-      <a><i class="fa-brands fa-instagram lg:ml-8"></i></a>
-      <a><i class="fa-regular fa-envelope lg:ml-8"></i></a>
+      <a href="mailto:asmaart.peintre@gmail.com"><i class="fa-brands fa-instagram lg:ml-8"></i></a>
+      <a href="https://www.instagram.com/asmaart/"><i class="fa-regular fa-envelope lg:ml-8"></i></a>
     </div>
   </div>
 </nav>
@@ -77,7 +77,7 @@
 
     <div class="flex flex-col lg:flex-row lg:flex-row-reverse">
         <div class="lg:w-1/2">
-            <img src="/img/profile.jpeg" class="px-24 pb-4 mx-auto lg:py-10 max-w-sm lg:max-w-xl" style="border-radius: 50%">
+            <img src="/img/profile.jpeg" class="px-24 pb-4 mx-auto lg:py-10 max-w-[23rem] lg:max-w-xl" style="border-radius: 50%">
         </div>
         <div class="lg:w-1/2 text-center text-lg lg:text-xl m-auto px-8 lg:pl-32 lg:pr-0">
             Pablo Picasso (1881-1973) was a Spanish painter and sculptor widely considered one of the most influential artists of the 20th century. He is best known for co-founding the Cubist movement and for his innovative and prolific work in a variety of styles, including Surrealism and Expressionism. Throughout his long and productive career, Picasso created thousands of paintings, drawings, and sculptures, including his iconic painting &#34;Les Demoiselles d&#39;Avignon&#34; and his sculpture &#34;Guernica,&#34; which was a powerful commentary on the Spanish Civil War. He remains an important figure in the art world and continues to inspire artists and art lovers around the world.
@@ -202,7 +202,8 @@
     </div>
 
 
-    <form action="https://formspree.io/f/your-formspree-form-id" method="POST" class="p-4 lg:px-32 lg:pb-10">
+    <form action="https://api.web3forms.com/submit" method="POST" class="p-4 lg:px-32 lg:pb-10">
+    <input type="hidden" name="access_key" value="04674b6d-d4e5-4c07-b44b-fcea80a58e3b">
     <div class="flex flex-wrap mb-6">
         <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
             <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="name">
@@ -217,6 +218,7 @@
             <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="email" name="_replyto" type="email" required>
         </div>
     </div>
+    <input type="hidden" name="redirect" value="https://web3forms.com/success">
     <div class="mb-6">
         <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="message">
             Message
@@ -224,7 +226,7 @@
         <textarea class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="message" name="message" rows="6" required></textarea>
     </div>
     <div class="flex justify-center">
-        <button class="bg-gray-800 text-white hover:bg-gray-900 py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="submit">
+        <button id="contact-button" class="py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="submit">
             Envoyer
         </button>
     </div>
