@@ -3,6 +3,7 @@ npx tailwindcss -i ./src/input.css -o ./dist/output.css
 cp -r dist/ public/dist
 cp script.js public/script.js
 cp -r img public/img
+cp -r node_modules public/node_modules
 
 cd src
 
