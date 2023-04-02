@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/dist/output.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/node_modules/owl.carousel/dist/assets/owl.carousel.min.css" />
+    <link rel="stylesheet" href="/node_modules/lightbox2/dist/css/lightbox.min.css">
+
+    <style>
+    body {
+        /* Location of the image */
+        background-image: url(/background.png);
+        /* Background image is centered vertically and horizontally at all times */
+        background-position: bottom center;
+        /* Background image doesn’t tile */
+        background-repeat: no-repeat;
+        /* Background image is fixed in the viewport so that it doesn’t move when the content’s height is greater than the image’s height */
+        /*background-attachment: fixed; !* This is what makes the background image rescale based on the container’s size *!*/
+        background-size: cover; /* Set a background color that will be displayed while the background image is loading */
+    }
+</style>
+</head>
+<body>
+
+<nav class="container flex flex-wrap justify-between lg:bg-transparent p-4 mx-auto max-w-full sticky top-0 lg:relative z-50">
+  <div>
+    <a href="index.html">
+      <img src="/img/logo.png" class="h-10">
+    </a>
+
+    <!--        <h3 class="text-2xl font-medium">ASMAART.</h3>-->
+  </div>
+
+  <div class="flex lg:hidden my-auto">
+    <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="w-6 h-6"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            onclick="toggleMenu()"
+    >
+      <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"
+      />
+    </svg>
+  </div>
+  <div class="w-full lg:hidden"></div>
+  <div id="menu" class="hidden lg:flex my-auto mx-auto lg:mx-0">
+    <a class="p-0"></a>
+    <a href="gallery.html">Galerie</a>
+<!--    <a href="#">Peinture personnalisée</a>-->
+    <a href="#contact">Contact</a>
+    <div class="flex justify-around pt-2 text-2xl">
+      <a><i class="fa-brands fa-instagram lg:ml-8"></i></a>
+      <a><i class="fa-regular fa-envelope lg:ml-8"></i></a>
+    </div>
+  </div>
+</nav>
+
+<main class="relative text-white">
+    <div class="">
+        <img src="/img/logo.png" class="mx-auto w-3/5 md:w-1/2 max-w-lg p-4">
+        <div class="mx-auto w-3/5 md:w-1/2 max-w-lg border-b-2"></div>
+        <h1 class="text-lg md:text-2xl lg:text-4xl font-bold text-center pt-4 pb-8 px-2 uppercase font-light">
+             GALERIE
+        </h1>
+        <div class="text-center text-lg lg:text-xl m-auto px-8 lg:px-32">
+            Welcome to our art gallery! We are proud to showcase a diverse collection of paintings from talented artists around the world. From stunning landscapes to beautiful floral paintings, our collection offers something for everyone. Take your time browsing through our exhibits and feel free to ask our knowledgeable staff any questions you may have. Whether you are a seasoned collector or a first-time art buyer, we are here to help you find the perfect piece to add to your collection. Thank you for visiting our gallery!
+        </div>
+    </div>
+
+    <div class=" md:max-w-[80%] mx-auto px-4 sm:px-6 lg:px-8 mt-10">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            
+                <div class="bg-white shadow-lg rounded-lg overflow-hidden relative">
+                    <div class="gallery-carousel owl-carousel owl-theme">
+                        
+                            <a href="https://source.unsplash.com/random/864x1080?sig=1231" data-lightbox="gallery" class="block">
+                                <img class="object-cover owl-lazy object-center max-w-[90vw] md:max-w-[35vw]" data-src="https://source.unsplash.com/random/864x1080?sig=1231" alt="Blue Sky" data-lightbox="gallery">
+                            </a>
+                        
+                            <a href="https://source.unsplash.com/random/864x1080?sig=1232" data-lightbox="gallery" class="block">
+                                <img class="object-cover owl-lazy object-center max-w-[90vw] md:max-w-[35vw]" data-src="https://source.unsplash.com/random/864x1080?sig=1232" alt="Blue Sky" data-lightbox="gallery">
+                            </a>
+                        
+                            <a href="https://source.unsplash.com/random/864x1080?sig=1233" data-lightbox="gallery" class="block">
+                                <img class="object-cover owl-lazy object-center max-w-[90vw] md:max-w-[35vw]" data-src="https://source.unsplash.com/random/864x1080?sig=1233" alt="Blue Sky" data-lightbox="gallery">
+                            </a>
+                        
+                    </div>
+                    <div class="p-4 text-center">
+                        <h3 class="font-semibold text-lg mb-2">Blue Sky</h3>
+                        <p class="text-gray-600 mb-2">24&#34;x36&#34;</p>
+                        <p class="text-gray-600 mb-4">50€</p>
+                        <p class="text-gray-500 text-sm">This paint captures the essence of a bright blue sky on a clear day. Its smooth texture makes it easy to work with and perfect for both beginners and professionals alike.</p>
+                    </div>
+                </div>
+            
+                <div class="bg-white shadow-lg rounded-lg overflow-hidden relative">
+                    <div class="gallery-carousel owl-carousel owl-theme">
+                        
+                            <a href="https://source.unsplash.com/random/864x1080?sig=1234" data-lightbox="gallery" class="block">
+                                <img class="object-cover owl-lazy object-center max-w-[90vw] md:max-w-[35vw]" data-src="https://source.unsplash.com/random/864x1080?sig=1234" alt="Sunset Glow" data-lightbox="gallery">
+                            </a>
+                        
+                            <a href="https://source.unsplash.com/random/864x1080?sig=1235" data-lightbox="gallery" class="block">
+                                <img class="object-cover owl-lazy object-center max-w-[90vw] md:max-w-[35vw]" data-src="https://source.unsplash.com/random/864x1080?sig=1235" alt="Sunset Glow" data-lightbox="gallery">
+                            </a>
+                        
+                            <a href="https://source.unsplash.com/random/864x1080?sig=1236" data-lightbox="gallery" class="block">
+                                <img class="object-cover owl-lazy object-center max-w-[90vw] md:max-w-[35vw]" data-src="https://source.unsplash.com/random/864x1080?sig=1236" alt="Sunset Glow" data-lightbox="gallery">
+                            </a>
+                        
+                    </div>
+                    <div class="p-4 text-center">
+                        <h3 class="font-semibold text-lg mb-2">Sunset Glow</h3>
+                        <p class="text-gray-600 mb-2">30&#34;x40&#34;</p>
+                        <p class="text-gray-600 mb-4">75€</p>
+                        <p class="text-gray-500 text-sm">Bring the warmth and beauty of a sunset into your artwork with this vibrant paint. Its rich pigment and velvety texture make it a pleasure to work with.</p>
+                    </div>
+                </div>
+            
+                <div class="bg-white shadow-lg rounded-lg overflow-hidden relative">
+                    <div class="gallery-carousel owl-carousel owl-theme">
+                        
+                            <a href="https://source.unsplash.com/random/864x1080?sig=1237" data-lightbox="gallery" class="block">
+                                <img class="object-cover owl-lazy object-center max-w-[90vw] md:max-w-[35vw]" data-src="https://source.unsplash.com/random/864x1080?sig=1237" alt="Forest Green" data-lightbox="gallery">
+                            </a>
+                        
+                            <a href="https://source.unsplash.com/random/864x1080?sig=1238" data-lightbox="gallery" class="block">
+                                <img class="object-cover owl-lazy object-center max-w-[90vw] md:max-w-[35vw]" data-src="https://source.unsplash.com/random/864x1080?sig=1238" alt="Forest Green" data-lightbox="gallery">
+                            </a>
+                        
+                            <a href="https://source.unsplash.com/random/864x1080?sig=1239" data-lightbox="gallery" class="block">
+                                <img class="object-cover owl-lazy object-center max-w-[90vw] md:max-w-[35vw]" data-src="https://source.unsplash.com/random/864x1080?sig=1239" alt="Forest Green" data-lightbox="gallery">
+                            </a>
+                        
+                    </div>
+                    <div class="p-4 text-center">
+                        <h3 class="font-semibold text-lg mb-2">Forest Green</h3>
+                        <p class="text-gray-600 mb-2">18&#34;x24&#34;</p>
+                        <p class="text-gray-600 mb-4">60€</p>
+                        <p class="text-gray-500 text-sm">This deep green paint is perfect for capturing the lush beauty of a forest. Its thick consistency allows for easy blending and layering, making it a great choice for creating depth and dimension in your artwork.</p>
+                    </div>
+                </div>
+            
+                <div class="bg-white shadow-lg rounded-lg overflow-hidden relative">
+                    <div class="gallery-carousel owl-carousel owl-theme">
+                        
+                            <a href="https://source.unsplash.com/random/864x1080?sig=12310" data-lightbox="gallery" class="block">
+                                <img class="object-cover owl-lazy object-center max-w-[90vw] md:max-w-[35vw]" data-src="https://source.unsplash.com/random/864x1080?sig=12310" alt="Golden Sunset" data-lightbox="gallery">
+                            </a>
+                        
+                            <a href="https://source.unsplash.com/random/864x1080?sig=12311" data-lightbox="gallery" class="block">
+                                <img class="object-cover owl-lazy object-center max-w-[90vw] md:max-w-[35vw]" data-src="https://source.unsplash.com/random/864x1080?sig=12311" alt="Golden Sunset" data-lightbox="gallery">
+                            </a>
+                        
+                            <a href="https://source.unsplash.com/random/864x1080?sig=12312" data-lightbox="gallery" class="block">
+                                <img class="object-cover owl-lazy object-center max-w-[90vw] md:max-w-[35vw]" data-src="https://source.unsplash.com/random/864x1080?sig=12312" alt="Golden Sunset" data-lightbox="gallery">
+                            </a>
+                        
+                    </div>
+                    <div class="p-4 text-center">
+                        <h3 class="font-semibold text-lg mb-2">Golden Sunset</h3>
+                        <p class="text-gray-600 mb-2">36&#34;x48&#34;</p>
+                        <p class="text-gray-600 mb-4">90€</p>
+                        <p class="text-gray-500 text-sm">The warm, golden tones of this paint capture the beauty of a sunset in all its glory. Its smooth texture and high-quality pigment make it a great choice for creating stunning landscape paintings.</p>
+                    </div>
+                </div>
+            
+                <div class="bg-white shadow-lg rounded-lg overflow-hidden relative">
+                    <div class="gallery-carousel owl-carousel owl-theme">
+                        
+                            <a href="https://source.unsplash.com/random/864x1080?sig=12313" data-lightbox="gallery" class="block">
+                                <img class="object-cover owl-lazy object-center max-w-[90vw] md:max-w-[35vw]" data-src="https://source.unsplash.com/random/864x1080?sig=12313" alt="Ocean Blue" data-lightbox="gallery">
+                            </a>
+                        
+                            <a href="https://source.unsplash.com/random/864x1080?sig=12314" data-lightbox="gallery" class="block">
+                                <img class="object-cover owl-lazy object-center max-w-[90vw] md:max-w-[35vw]" data-src="https://source.unsplash.com/random/864x1080?sig=12314" alt="Ocean Blue" data-lightbox="gallery">
+                            </a>
+                        
+                            <a href="https://source.unsplash.com/random/864x1080?sig=12315" data-lightbox="gallery" class="block">
+                                <img class="object-cover owl-lazy object-center max-w-[90vw] md:max-w-[35vw]" data-src="https://source.unsplash.com/random/864x1080?sig=12315" alt="Ocean Blue" data-lightbox="gallery">
+                            </a>
+                        
+                    </div>
+                    <div class="p-4 text-center">
+                        <h3 class="font-semibold text-lg mb-2">Ocean Blue</h3>
+                        <p class="text-gray-600 mb-2">24&#34;x30&#34;</p>
+                        <p class="text-gray-600 mb-4">55€</p>
+                        <p class="text-gray-500 text-sm">Create stunning seascapes and beach scenes with this beautiful blue paint. Its smooth consistency and high-quality pigment make it perfect for capturing the beauty of the ocean and sky.</p>
+                    </div>
+                </div>
+            
+                <div class="bg-white shadow-lg rounded-lg overflow-hidden relative">
+                    <div class="gallery-carousel owl-carousel owl-theme">
+                        
+                            <a href="https://source.unsplash.com/random/864x1080?sig=12316" data-lightbox="gallery" class="block">
+                                <img class="object-cover owl-lazy object-center max-w-[90vw] md:max-w-[35vw]" data-src="https://source.unsplash.com/random/864x1080?sig=12316" alt="Cherry Blossom" data-lightbox="gallery">
+                            </a>
+                        
+                            <a href="https://source.unsplash.com/random/864x1080?sig=12317" data-lightbox="gallery" class="block">
+                                <img class="object-cover owl-lazy object-center max-w-[90vw] md:max-w-[35vw]" data-src="https://source.unsplash.com/random/864x1080?sig=12317" alt="Cherry Blossom" data-lightbox="gallery">
+                            </a>
+                        
+                            <a href="https://source.unsplash.com/random/864x1080?sig=12318" data-lightbox="gallery" class="block">
+                                <img class="object-cover owl-lazy object-center max-w-[90vw] md:max-w-[35vw]" data-src="https://source.unsplash.com/random/864x1080?sig=12318" alt="Cherry Blossom" data-lightbox="gallery">
+                            </a>
+                        
+                    </div>
+                    <div class="p-4 text-center">
+                        <h3 class="font-semibold text-lg mb-2">Cherry Blossom</h3>
+                        <p class="text-gray-600 mb-2">16&#34;x20&#34;</p>
+                        <p class="text-gray-600 mb-4">70€</p>
+                        <p class="text-gray-500 text-sm">The delicate pink hues of this paint capture the beauty of cherry blossoms in full bloom. Its smooth texture and vibrant color make it a great choice for creating beautiful floral paintings.</p>
+                    </div>
+                </div>
+            
+        </div>
+    </div>
+
+
+    <div class="mt-10">
+        <h2 class="text-lg md:text-2xl lg:text-4xl font-bold text-center pt-4 pb-8 px-2 uppercase font-light" id="contact">
+            CONTACT
+        </h2>
+        <p class="p-4 lg:px-32 text-center">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus suscipit, orci a cursus pretium, nisi urna egestas sapien, ac molestie purus erat vitae neque. Nam condimentum fermentum elit, vitae maximus magna interdum nec. Aenean ut rutrum turpis. Suspendisse eget eros a urna maximus pulvinar. Phasellus nec leo orci. In eget mollis nisi. Cras pretium magna quis aliquet suscipit.
+        </p>
+    </div>
+
+    <form action="https://formspree.io/f/your-formspree-form-id" method="POST" class="p-4 lg:px-32 lg:pb-10">
+    <div class="flex flex-wrap mb-6">
+        <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+            <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="name">
+                Nom
+            </label>
+            <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="name" name="name" type="text" required>
+        </div>
+        <div class="w-full md:w-1/2 px-3">
+            <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="email">
+                Email
+            </label>
+            <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="email" name="_replyto" type="email" required>
+        </div>
+    </div>
+    <div class="mb-6">
+        <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="message">
+            Message
+        </label>
+        <textarea class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="message" name="message" rows="6" required></textarea>
+    </div>
+    <div class="flex justify-center">
+        <button class="bg-gray-800 text-white hover:bg-gray-900 py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="submit">
+            Envoyer
+        </button>
+    </div>
+</form>
+
+</main>
+
+<script src="https://kit.fontawesome.com/e04d7c62a8.js" crossorigin="anonymous"></script>
+<script src="/node_modules/jquery/dist/jquery.js"></script>
+<script src="/node_modules/owl.carousel/dist/owl.carousel.min.js"></script>
+<script src="/node_modules/lightbox2/dist/js/lightbox.js"></script>
+<script src="../script.js"></script>
+</body>
+</html>
