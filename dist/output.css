@@ -1041,6 +1041,10 @@ blockquote:after {
   border-radius: 3rem;
 }
 
+.gallery-item {
+  background-color: rgba(255, 255, 255, 0.75);
+}
+
 .hover\:bg-gray-900:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(17 24 39 / var(--tw-bg-opacity));
