@@ -10,7 +10,7 @@
 
 
 nav, #contact-button {
-    background-color: #cdac8c;
+    background-color: rgba(205, 172, 140, 0.9);
 }
 
 #contact-button:hover {
@@ -27,7 +27,7 @@ video {
 }
 
 #menu > a {
-    @apply text-lg;
+    @apply text-2xl;
     @apply lg:text-sm;
     @apply pt-4;
     @apply block;
