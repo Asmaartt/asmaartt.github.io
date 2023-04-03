@@ -79,14 +79,17 @@
 
     <div class="flex flex-col lg:flex-row lg:flex-row-reverse">
         <div class="lg:w-1/2">
-            <img src="/img/profile.jpeg" class="px-24 pb-4 mx-auto lg:py-10 max-w-[23rem] lg:max-w-xl" style="border-radius: 50%">
+            <img id="main-img" src="/img/profile.jpeg" class="px-24 pb-4 mx-auto lg:py-10 max-w-[23rem] lg:max-w-xl" style="border-radius: 50%">
         </div>
-        <div class="lg:w-1/2 text-center text-lg lg:text-xl m-auto px-8 lg:pl-32 lg:pr-0">
+        <div id="bio" class="lg:w-1/2 text-center text-lg lg:text-xl m-auto px-8 lg:pl-32 lg:pr-0">
             Pablo Picasso (1881-1973) was a Spanish painter and sculptor widely considered one of the most influential artists of the 20th century. He is best known for co-founding the Cubist movement and for his innovative and prolific work in a variety of styles, including Surrealism and Expressionism. Throughout his long and productive career, Picasso created thousands of paintings, drawings, and sculptures, including his iconic painting &#34;Les Demoiselles d&#39;Avignon&#34; and his sculpture &#34;Guernica,&#34; which was a powerful commentary on the Spanish Civil War. He remains an important figure in the art world and continues to inspire artists and art lovers around the world.
         </div>
     </div>
 
-    <div>
+    <div id="main-carousel-container">
+        <h2 class="text-lg md:text-2xl lg:text-4xl font-bold text-center pt-8 pb-4 px-2 uppercase font-light">
+            NOUVEAUTÉS
+        </h2>
         <div id="main-carousel" class="owl-carousel owl-theme py-4">
             
                 <div>
@@ -109,6 +112,7 @@
     </div>
 
 
+    <div id="review-container">
     <h2 class="text-lg md:text-2xl lg:text-4xl font-bold text-center pt-4 pb-8 px-2 uppercase font-light">
         AVIS
     </h2>
@@ -201,6 +205,7 @@
             </div>
         
     </div>
+    </div>
 
     <div class="mt-10">
         <h2 class="text-lg md:text-2xl lg:text-4xl font-bold text-center pt-4 pb-8 px-2 uppercase font-light" id="contact">
@@ -212,7 +217,7 @@
     </div>
 
 
-    <form action="https://api.web3forms.com/submit" method="POST" class="p-4 lg:px-32 lg:pb-10">
+    <form id="contact-form" action="https://api.web3forms.com/submit" method="POST" class="p-4 lg:px-32 lg:pb-10">
     <input type="hidden" name="access_key" value="04674b6d-d4e5-4c07-b44b-fcea80a58e3b">
     <div class="flex flex-wrap mb-6">
         <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
@@ -247,6 +252,8 @@
 <script src="https://kit.fontawesome.com/e04d7c62a8.js" crossorigin="anonymous"></script>
 <script src="/node_modules/jquery/dist/jquery.js"></script>
 <script src="/node_modules/owl.carousel/dist/owl.carousel.min.js"></script>
+<script src="/node_modules/animejs/lib/anime.min.js"></script>
 <script src="../script.js"></script>
+<script src="../animation.js"></script>
 </body>
 </html>

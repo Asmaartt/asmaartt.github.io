@@ -1,9 +1,25 @@
 function toggleMenu() {
     const menu = document.getElementById("menu");
     if (menu.classList.contains("hidden")) {
+        // Show the menu with animation
+        anime({
+            targets: menu,
+            opacity: [0, 0.9],
+            duration: 500,
+            easing: 'easeOutQuad'
+        });
         menu.classList.remove("hidden");
     } else {
-        menu.classList.add("hidden");
+        // Hide the menu with animation
+        anime({
+            targets: menu,
+            opacity: [0.9, 0],
+            duration: 500,
+            easing: 'easeInQuad',
+            complete: function() {
+                menu.classList.add("hidden");
+            }
+        });
     }
 }
 
