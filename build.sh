@@ -3,6 +3,8 @@ touch public/.nojekyll
 npx tailwindcss -i ./src/input.css -o ./dist/output.css
 cp -r dist/ public/dist
 cp script.js public/script.js
+cp animation.js public/animation.js
+cp animation1.js public/animation1.js
 cp -r img public/img
 cp -r node_modules public/node_modules
 

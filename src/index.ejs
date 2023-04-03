@@ -27,14 +27,17 @@
 
     <div class="flex flex-col lg:flex-row lg:flex-row-reverse">
         <div class="lg:w-1/2">
-            <img src="/img/profile.jpeg" class="px-24 pb-4 mx-auto lg:py-10 max-w-[23rem] lg:max-w-xl" style="border-radius: 50%">
+            <img id="main-img" src="/img/profile.jpeg" class="px-24 pb-4 mx-auto lg:py-10 max-w-[23rem] lg:max-w-xl" style="border-radius: 50%">
         </div>
-        <div class="lg:w-1/2 text-center text-lg lg:text-xl m-auto px-8 lg:pl-32 lg:pr-0">
+        <div id="bio" class="lg:w-1/2 text-center text-lg lg:text-xl m-auto px-8 lg:pl-32 lg:pr-0">
             <%= bio %>
         </div>
     </div>
 
-    <div>
+    <div id="main-carousel-container">
+        <h2 class="text-lg md:text-2xl lg:text-4xl font-bold text-center pt-8 pb-4 px-2 uppercase font-light">
+            NOUVEAUTÉS
+        </h2>
         <div id="main-carousel" class="owl-carousel owl-theme py-4">
             <% images.forEach(function(path) { %>
                 <div>
@@ -45,6 +48,7 @@
     </div>
 
 
+    <div id="review-container">
     <h2 class="text-lg md:text-2xl lg:text-4xl font-bold text-center pt-4 pb-8 px-2 uppercase font-light">
         AVIS
     </h2>
@@ -69,6 +73,7 @@
             </div>
         <% }) %>
     </div>
+    </div>
 
     <div class="mt-10">
         <h2 class="text-lg md:text-2xl lg:text-4xl font-bold text-center pt-4 pb-8 px-2 uppercase font-light" id="contact">
@@ -87,6 +92,8 @@
 <script src="https://kit.fontawesome.com/e04d7c62a8.js" crossorigin="anonymous"></script>
 <script src="/node_modules/jquery/dist/jquery.js"></script>
 <script src="/node_modules/owl.carousel/dist/owl.carousel.min.js"></script>
+<script src="/node_modules/animejs/lib/anime.min.js"></script>
 <script src="../script.js"></script>
+<script src="../animation.js"></script>
 </body>
 </html>
