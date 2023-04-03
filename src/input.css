@@ -27,7 +27,7 @@ video {
 }
 
 #menu > a {
-    @apply text-2xl;
+    @apply text-3xl;
     @apply lg:text-sm;
     @apply pt-4;
     @apply block;
