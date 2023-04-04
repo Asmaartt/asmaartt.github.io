@@ -5,15 +5,6 @@ function set() {
         scale: 0
     });
 
-    const form = document.querySelector('#contact-form');
-    const fields = form.querySelectorAll('input, textarea');
-
-// Hide the form initially
-    anime.set(form, {opacity: 0, translateY: '50px'});
-
-// Hide the form elements initially
-    anime.set(fields, {opacity: 0, translateX: '-50px'});
-
     var bioSection = document.querySelector('#bio');
 
     anime.set(bioSection, {opacity:0})
@@ -109,6 +100,12 @@ function animate() {
     const form = document.querySelector('#contact-form');
     const fields = form.querySelectorAll('input, textarea');
 
+// Hide the form initially
+    anime.set(form, {opacity: 0, translateY: '50px'});
+
+// Hide the form elements initially
+    anime.set(fields, {opacity: 0, translateX: '-50px'});
+
     const observer3 = new IntersectionObserver(entries => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
@@ -124,7 +121,7 @@ function animate() {
 
                 anime({
                     targets: fields,
-                    translateY: "-100%",
+                    translateX: [-50, 0],
                     opacity: [0, 1],
                     easing: 'easeInOutQuad',
                     duration: 1000,
