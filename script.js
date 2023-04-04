@@ -51,7 +51,6 @@ $(document).ready(function(){
         center:true,
         items: 1,
         dots: true,
-        lazyLoad: true
 
     });
 });
