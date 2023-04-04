@@ -34,8 +34,8 @@
                 <div class="gallery-item shadow-lg rounded-lg overflow-hidden relative">
                     <div class="gallery-carousel owl-carousel owl-theme">
                         <% paint.pictures.forEach(function(picture) { %>
-                            <a href="<%= picture %>" data-lightbox="gallery" class="block">
-                                <img class="object-cover owl-lazy object-center max-w-[90vw] md:max-w-[35vw]" data-src="<%= picture %>" alt="<%= paint.name %>" data-lightbox="gallery">
+                            <a href="<%= picture %>" data-lightbox="gallery" data-title="<%= paint.description %>" class="block">
+                                <img class="object-cover object-center max-w-[90vw] md:max-w-[35vw]" src="<%= picture %>" alt="<%= paint.name %>" data-lightbox="gallery">
                             </a>
                         <% }) %>
                     </div>
@@ -43,7 +43,7 @@
                         <h3 class="font-semibold text-lg mb-2"><%= paint.name %></h3>
                         <p class="text-gray-600 mb-2"><%= paint.size %></p>
                         <p class="text-gray-600 mb-4"><%= paint.price %>€</p>
-                        <p class="text-gray-500 text-sm"><%= paint.description %></p>
+<!--                        <p class="text-gray-500 text-sm"><%= paint.description %></p>-->
                     </div>
                 </div>
             <% }) %>
@@ -63,6 +63,12 @@
     <%- include('contact') %>
 
 </main>
+
+<div id="loading-page" class="fixed top-0 left-0 w-screen h-screen flex flex-col justify-center items-center z-50">
+    <img src="img/logo.png" alt="Logo" class="max-w-[70vw]">
+    <div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div>
+
+</div>
 
 <script src="https://kit.fontawesome.com/e04d7c62a8.js" crossorigin="anonymous"></script>
 <script src="/node_modules/jquery/dist/jquery.js"></script>
