@@ -2,6 +2,7 @@ mkdir -p public
 touch public/.nojekyll
 npx tailwindcss -i ./src/input.css -o ./dist/output.css
 cp -r dist/ public/dist
+cp hamburgers.css public/dist/hamburgers.css
 cp script.js public/script.js
 cp animation.js public/animation.js
 cp animation1.js public/animation1.js
