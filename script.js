@@ -31,6 +31,7 @@ $(document).ready(function(){
         autoplayTimeout:5000,
         autoplayHoverPause:false,
         center:true,
+        dots:false,
     });
 
     $('#review-carousel').owlCarousel({
@@ -42,6 +43,7 @@ $(document).ready(function(){
         center:true,
         items: 1,
         autoHeight:true,
+        dots:false,
     });
 
     $('.gallery-carousel').owlCarousel({
@@ -50,7 +52,6 @@ $(document).ready(function(){
         loop:true,
         center:true,
         items: 1,
-        dots: true,
-
+        dots: false,
     });
 });
