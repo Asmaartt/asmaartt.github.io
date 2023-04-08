@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="/dist/output.css" rel="stylesheet">
+    <link href="/hamburgers.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Montserrat&display=swap" rel="stylesheet">
@@ -36,21 +37,12 @@
   </div>
 
   <div class="flex lg:hidden my-auto">
-    <svg
-            xmlns="http://www.w3.org/2000/svg"
-            class="w-6 h-6"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-            onclick="toggleMenu()"
-    >
-      <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M4 6h16M4 12h16M4 18h16"
-      />
-    </svg>
+    <button class="hamburger hamburger--collapse" type="button" onclick="toggleMenu()" id="menu-button">
+      <span class="hamburger-box">
+        <span class="hamburger-inner"></span>
+      </span>
+    </button>
+
   </div>
   <div class="w-full lg:hidden"></div>
   <div id="menu" class="hidden flex lg:flex my-auto mx-auto lg:mx-0 h-screen lg:h-auto flex-col lg:flex-row justify-evenly">
@@ -99,11 +91,10 @@
                             </a>
                         
                     </div>
-                    <div class="p-4 text-center">
+                    <div class="p-2 text-center">
                         <h3 class="font-semibold text-lg mb-2">Blue Sky</h3>
                         <p class="text-gray-600 mb-2">24&#34;x36&#34;</p>
                         <p class="text-gray-600 mb-4">50€</p>
-<!--                        <p class="text-gray-500 text-sm">This paint captures the essence of a bright blue sky on a clear day. Its smooth texture makes it easy to work with and perfect for both beginners and professionals alike.</p>-->
                     </div>
                 </div>
             
@@ -123,11 +114,10 @@
                             </a>
                         
                     </div>
-                    <div class="p-4 text-center">
+                    <div class="p-2 text-center">
                         <h3 class="font-semibold text-lg mb-2">Sunset Glow</h3>
                         <p class="text-gray-600 mb-2">30&#34;x40&#34;</p>
                         <p class="text-gray-600 mb-4">75€</p>
-<!--                        <p class="text-gray-500 text-sm">Bring the warmth and beauty of a sunset into your artwork with this vibrant paint. Its rich pigment and velvety texture make it a pleasure to work with.</p>-->
                     </div>
                 </div>
             
@@ -147,11 +137,10 @@
                             </a>
                         
                     </div>
-                    <div class="p-4 text-center">
+                    <div class="p-2 text-center">
                         <h3 class="font-semibold text-lg mb-2">Forest Green</h3>
                         <p class="text-gray-600 mb-2">18&#34;x24&#34;</p>
                         <p class="text-gray-600 mb-4">60€</p>
-<!--                        <p class="text-gray-500 text-sm">This deep green paint is perfect for capturing the lush beauty of a forest. Its thick consistency allows for easy blending and layering, making it a great choice for creating depth and dimension in your artwork.</p>-->
                     </div>
                 </div>
             
@@ -171,11 +160,10 @@
                             </a>
                         
                     </div>
-                    <div class="p-4 text-center">
+                    <div class="p-2 text-center">
                         <h3 class="font-semibold text-lg mb-2">Golden Sunset</h3>
                         <p class="text-gray-600 mb-2">36&#34;x48&#34;</p>
                         <p class="text-gray-600 mb-4">90€</p>
-<!--                        <p class="text-gray-500 text-sm">The warm, golden tones of this paint capture the beauty of a sunset in all its glory. Its smooth texture and high-quality pigment make it a great choice for creating stunning landscape paintings.</p>-->
                     </div>
                 </div>
             
@@ -195,11 +183,10 @@
                             </a>
                         
                     </div>
-                    <div class="p-4 text-center">
+                    <div class="p-2 text-center">
                         <h3 class="font-semibold text-lg mb-2">Ocean Blue</h3>
                         <p class="text-gray-600 mb-2">24&#34;x30&#34;</p>
                         <p class="text-gray-600 mb-4">55€</p>
-<!--                        <p class="text-gray-500 text-sm">Create stunning seascapes and beach scenes with this beautiful blue paint. Its smooth consistency and high-quality pigment make it perfect for capturing the beauty of the ocean and sky.</p>-->
                     </div>
                 </div>
             
@@ -219,11 +206,10 @@
                             </a>
                         
                     </div>
-                    <div class="p-4 text-center">
+                    <div class="p-2 text-center">
                         <h3 class="font-semibold text-lg mb-2">Cherry Blossom</h3>
                         <p class="text-gray-600 mb-2">16&#34;x20&#34;</p>
                         <p class="text-gray-600 mb-4">70€</p>
-<!--                        <p class="text-gray-500 text-sm">The delicate pink hues of this paint capture the beauty of cherry blossoms in full bloom. Its smooth texture and vibrant color make it a great choice for creating beautiful floral paintings.</p>-->
                     </div>
                 </div>
             
