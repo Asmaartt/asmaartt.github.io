@@ -7,10 +7,18 @@
     color: #333333;
 }
 
+html {
+    scroll-behavior: smooth;
+}
 
-
-nav, #contact-button {
+nav, #contact-button, #menu-container {
     background-color: rgba(205, 172, 140, 0.9);
+}
+
+@media (min-width: 1024px) {
+    #menu-container {
+        background-color: transparent !important;
+    }
 }
 
 #loading-page {
