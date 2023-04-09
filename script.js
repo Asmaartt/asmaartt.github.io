@@ -57,7 +57,7 @@ $(document).ready(function(){
         loop:true,
         center:true,
         items: 1,
-        dots: false,
+        dots: true,
     });
 
 
