@@ -563,8 +563,16 @@ video {
   left: 0px;
 }
 
+.right-0 {
+  right: 0px;
+}
+
 .top-0 {
   top: 0px;
+}
+
+.top-\[72px\] {
+  top: 72px;
 }
 
 .z-50 {
@@ -799,6 +807,11 @@ video {
   padding: 1rem;
 }
 
+.px-12 {
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
 .px-2 {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
@@ -957,8 +970,18 @@ video {
   color: #333333;
 }
 
-nav, #contact-button {
+html {
+  scroll-behavior: smooth;
+}
+
+nav, #contact-button, #menu-container {
   background-color: rgba(205, 172, 140, 0.9);
+}
+
+@media (min-width: 1024px) {
+  #menu-container {
+    background-color: transparent !important;
+  }
 }
 
 #loading-page {
@@ -1240,6 +1263,10 @@ blockquote:after {
 }
 
 @media (min-width: 1024px) {
+  .lg\:static {
+    position: static;
+  }
+
   .lg\:relative {
     position: relative;
   }
@@ -1258,6 +1285,10 @@ blockquote:after {
     margin-left: 2rem;
   }
 
+  .lg\:block {
+    display: block;
+  }
+
   .lg\:flex {
     display: flex;
   }
@@ -1274,6 +1305,10 @@ blockquote:after {
     width: 50%;
   }
 
+  .lg\:w-auto {
+    width: auto;
+  }
+
   .lg\:max-w-xl {
     max-width: 36rem;
   }
@@ -1288,6 +1323,10 @@ blockquote:after {
 
   .lg\:bg-transparent {
     background-color: transparent;
+  }
+
+  .lg\:p-0 {
+    padding: 0px;
   }
 
   .lg\:px-32 {
