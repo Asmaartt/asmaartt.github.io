@@ -24,14 +24,14 @@ paints:
       - /img/aquareflec_1.JPG
       - /img/aquareflec_2.jpg
       - /img/aquareflec_3.JPG
-  - name: Golden Sunset
+  - name: Nébuleuse
     price: 90
     description: The warm, golden tones of this paint capture the beauty of a sunset in all its glory. Its smooth texture and high-quality pigment make it a great choice for creating stunning landscape paintings.
-    size: 36"x48"
+    size: 73"x55"
     pictures:
-      - https://fakeimg.pl/864x1080/
-      - https://fakeimg.pl/864x1080/
-      - https://fakeimg.pl/864x1080/
+      - /img/nebuleuse_1.JPG
+      - /img/nebuleuse_2.JPG
+      - /img/nebuleuse_3.JPG
   - name: Ocean Blue
     price: 55
     description: Create stunning seascapes and beach scenes with this beautiful blue paint. Its smooth consistency and high-quality pigment make it perfect for capturing the beauty of the ocean and sky.
