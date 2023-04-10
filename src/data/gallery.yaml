@@ -5,9 +5,9 @@ paints:
     description: This paint captures the essence of a bright blue sky on a clear day. Its smooth texture makes it easy to work with and perfect for both beginners and professionals alike.
     size: 24"x36"
     pictures:
-      - https://fakeimg.pl/864x1080/
+      - /img/cosmos_1.JPG
       - /img/cosmos_2.jpg
-      - https://fakeimg.pl/864x1080/
+      - /img/cosmos_3.JPG
   - name: Terre dorée
     price: 75
     description: Bring the warmth and beauty of a sunset into your artwork with this vibrant paint. Its rich pigment and velvety texture make it a pleasure to work with.
