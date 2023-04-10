@@ -16,14 +16,14 @@ paints:
       - /img/terredoree_1.JPG
       - /img/terredoree_2.JPG
       - /img/terredoree_3.JPG
-  - name: Forest Green
+  - name: Aqua Réflection
     price: 60
     description: This deep green paint is perfect for capturing the lush beauty of a forest. Its thick consistency allows for easy blending and layering, making it a great choice for creating depth and dimension in your artwork.
-    size: 18"x24"
+    size: 60"x80"
     pictures:
-      - https://fakeimg.pl/864x1080/
-      - https://fakeimg.pl/864x1080/
-      - https://fakeimg.pl/864x1080/
+      - /img/aquareflec_1.JPG
+      - /img/aquareflec_2.JPG
+      - /img/aquareflec_1.JPG
   - name: Golden Sunset
     price: 90
     description: The warm, golden tones of this paint capture the beauty of a sunset in all its glory. Its smooth texture and high-quality pigment make it a great choice for creating stunning landscape paintings.
