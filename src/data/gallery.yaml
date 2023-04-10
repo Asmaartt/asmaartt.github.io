@@ -13,9 +13,9 @@ paints:
     description: Bring the warmth and beauty of a sunset into your artwork with this vibrant paint. Its rich pigment and velvety texture make it a pleasure to work with.
     size: 100"x50"
     pictures:
-      - /img/terredoree_1.jpg
-      - /img/terredoree_2.jpg
-      - /img/terredoree_3.jpg
+      - /img/terredoree_1.JPG
+      - /img/terredoree_2.JPG
+      - /img/terredoree_3.JPG
   - name: Forest Green
     price: 60
     description: This deep green paint is perfect for capturing the lush beauty of a forest. Its thick consistency allows for easy blending and layering, making it a great choice for creating depth and dimension in your artwork.
