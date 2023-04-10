@@ -1,12 +1,12 @@
 text: Welcome to our art gallery! We are proud to showcase a diverse collection of paintings from talented artists around the world. From stunning landscapes to beautiful floral paintings, our collection offers something for everyone. Take your time browsing through our exhibits and feel free to ask our knowledgeable staff any questions you may have. Whether you are a seasoned collector or a first-time art buyer, we are here to help you find the perfect piece to add to your collection. Thank you for visiting our gallery!
 paints:
-  - name: Blue Sky
-    price: 50
+  - name: Cosmos
+    price: 
     description: This paint captures the essence of a bright blue sky on a clear day. Its smooth texture makes it easy to work with and perfect for both beginners and professionals alike.
     size: 24"x36"
     pictures:
       - https://fakeimg.pl/864x1080/
-      - https://fakeimg.pl/864x1080/
+      - /img/cosmos_2.jpg
       - https://fakeimg.pl/864x1080/
   - name: Sunset Glow
     price: 75
