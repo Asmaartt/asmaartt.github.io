@@ -13,14 +13,14 @@ reviews:
     city: France
     picture: /img/sandra.jpg
     review: Peinture à la hauteur des attentes, tu as bien su comprendre ce que je cherchais à transmettre. Je te recommande !
-  - name: Emily Chen
-    city: San Francisco
+  - name: Laurent
+    city: France
     picture: /img/placeholder.jpeg
-    review: I've been using this brand of paint for years and it never disappoints. The pigment is rich and the consistency is perfect.
-  - name: Michael Lee
-    city: Miami
+    review: Belle surprise pour ma mère. Très satisfait, mieux que je l'imaginais !
+  - name: Amine
+    city: France
     picture: /img/placeholder.jpeg
-    review: I bought this paint on a whim and I'm so glad I did. The color is unique and it blends beautifully with other colors.
+    review: Bravo à toi pour ce tableau et merci il est top. Comme je voulais, rien à dire, j'hésiterai pas revenir vers toi si besoin et tu es aussi très sympa.
   - name: Sarah Kim
     city: Chicago
     picture: /img/placeholder.jpeg
