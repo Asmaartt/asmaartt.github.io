@@ -64,14 +64,14 @@ paints:
       - /img/ocean_1.JPG
       - /img/ocean_2.JPG
       - /img/ocean_3.JPG
-  - name: Lover
+  - name: Jaguard
     price: 70
     description: The delicate pink hues of this paint capture the beauty of cherry blossoms in full bloom. Its smooth texture and vibrant color make it a great choice for creating beautiful floral paintings.
-    size: 16"x20"
+    size: 40"x50"
     pictures:
-      - https://fakeimg.pl/864x1080/
-      - https://fakeimg.pl/864x1080/
-      - https://fakeimg.pl/864x1080/
+      - /img/jaguard_1.JPG
+      - /img/jaguard_2.JPG
+      - /img/jaguard_3.JPG
   - name: titre
     price: 70
     description: The delicate pink hues of this paint capture the beauty of cherry blossoms in full bloom. Its smooth texture and vibrant color make it a great choice for creating beautiful floral paintings.
