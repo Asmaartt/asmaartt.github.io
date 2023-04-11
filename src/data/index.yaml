@@ -15,11 +15,11 @@ reviews:
     review: Peinture à la hauteur des attentes, tu as bien su comprendre ce que je cherchais à transmettre. Je te recommande !
   - name: Laurent
     city: France
-    picture: /img/placeholder.jpeg
+    picture: /img/laurent.jpg
     review: Belle surprise pour ma mère. Très satisfait, mieux que je l'imaginais !
   - name: Amine
     city: France
-    picture: /img/placeholder.jpeg
+    picture: /img/amine.jpg
     review: Bravo à toi pour ce tableau et merci il est top. Comme je voulais, rien à dire, j'hésiterai pas revenir vers toi si besoin et tu es aussi très sympa.
   - name: Sarah Kim
     city: Chicago
