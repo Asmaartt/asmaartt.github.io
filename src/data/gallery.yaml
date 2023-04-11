@@ -48,14 +48,14 @@ paints:
       - /img/blessure_1.JPG
       - /img/blessure_2.JPG
       - /img/blessure_3.JPG
-  - name: Good
+  - name: Eclat
     price: 70
     description: The delicate pink hues of this paint capture the beauty of cherry blossoms in full bloom. Its smooth texture and vibrant color make it a great choice for creating beautiful floral paintings.
     size: 16"x20"
     pictures:
-      - https://fakeimg.pl/864x1080/
-      - https://fakeimg.pl/864x1080/
-      - https://fakeimg.pl/864x1080/
+      - /img/eclat_1.JPG
+      - /img/eclat_2.JPG
+      - /img/eclat_3.JPG
   - name: Love
     price: 70
     description: The delicate pink hues of this paint capture the beauty of cherry blossoms in full bloom. Its smooth texture and vibrant color make it a great choice for creating beautiful floral paintings.
