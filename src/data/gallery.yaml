@@ -72,7 +72,23 @@ paints:
       - /img/jaguard_1.JPG
       - /img/jaguard_2.JPG
       - /img/jaguard_3.JPG
-  - name: titre
+  - name: Balance des sentiments
+    price: 70
+    description: The delicate pink hues of this paint capture the beauty of cherry blossoms in full bloom. Its smooth texture and vibrant color make it a great choice for creating beautiful floral paintings.
+    size: 30"x40"
+    pictures:
+      - /img/balance_1.JPG
+      - /img/balance_2.JPG
+      - /img/balance_3.JPG
+  - name: everytging
+    price: 70
+    description: The delicate pink hues of this paint capture the beauty of cherry blossoms in full bloom. Its smooth texture and vibrant color make it a great choice for creating beautiful floral paintings.
+    size: 16"x20"
+    pictures:
+      - https://fakeimg.pl/864x1080/
+      - https://fakeimg.pl/864x1080/
+      - https://fakeimg.pl/864x1080/
+  - name: grace
     price: 70
     description: The delicate pink hues of this paint capture the beauty of cherry blossoms in full bloom. Its smooth texture and vibrant color make it a great choice for creating beautiful floral paintings.
     size: 16"x20"
