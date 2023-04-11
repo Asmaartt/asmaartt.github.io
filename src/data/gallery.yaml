@@ -77,9 +77,9 @@ paints:
     description: The delicate pink hues of this paint capture the beauty of cherry blossoms in full bloom. Its smooth texture and vibrant color make it a great choice for creating beautiful floral paintings.
     size: 30"x40"
     pictures:
+      - /img/balance_3.JPG
       - /img/balance_1.JPG
       - /img/balance_2.JPG
-      - /img/balance_3.JPG
   - name: everytging
     price: 70
     description: The delicate pink hues of this paint capture the beauty of cherry blossoms in full bloom. Its smooth texture and vibrant color make it a great choice for creating beautiful floral paintings.
