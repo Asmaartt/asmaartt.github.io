@@ -48,5 +48,21 @@ paints:
       - https://fakeimg.pl/864x1080/
       - https://fakeimg.pl/864x1080/
       - https://fakeimg.pl/864x1080/
+  - name: Good
+    price: 70
+    description: The delicate pink hues of this paint capture the beauty of cherry blossoms in full bloom. Its smooth texture and vibrant color make it a great choice for creating beautiful floral paintings.
+    size: 16"x20"
+    pictures:
+      - https://fakeimg.pl/864x1080/
+      - https://fakeimg.pl/864x1080/
+      - https://fakeimg.pl/864x1080/
+  - name: Love
+    price: 70
+    description: The delicate pink hues of this paint capture the beauty of cherry blossoms in full bloom. Its smooth texture and vibrant color make it a great choice for creating beautiful floral paintings.
+    size: 16"x20"
+    pictures:
+      - https://fakeimg.pl/864x1080/
+      - https://fakeimg.pl/864x1080/
+      - https://fakeimg.pl/864x1080/
 
 contact: Thank you for visiting our website! If you have any questions about our products or would like to place an order, please don't hesitate to contact us using the form below or by sending an email to info@paintcompany.com. You can also stay up to date with our latest products and promotions by following us on Instagram @asmaart. Our goal is to provide you with high-quality paints and excellent customer service, and we look forward to hearing from you!
