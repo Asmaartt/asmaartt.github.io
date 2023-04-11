@@ -32,14 +32,14 @@ paints:
       - /img/nebuleuse_1.JPG
       - /img/nebuleuse_2.JPG
       - /img/nebuleuse_3.JPG
-  - name: Ocean Blue
+  - name: Eclipse de bonheur
     price: 55
     description: Create stunning seascapes and beach scenes with this beautiful blue paint. Its smooth consistency and high-quality pigment make it perfect for capturing the beauty of the ocean and sky.
-    size: 24"x30"
+    size: 60"x80"
     pictures:
-      - https://fakeimg.pl/864x1080/
-      - https://fakeimg.pl/864x1080/
-      - https://fakeimg.pl/864x1080/
+      - /img/eclipse_1.JPG
+      - /img/eclipse_2.JPG
+      - /img/eclipse_3.JPG
   - name: Cherry Blossom
     price: 70
     description: The delicate pink hues of this paint capture the beauty of cherry blossoms in full bloom. Its smooth texture and vibrant color make it a great choice for creating beautiful floral paintings.
