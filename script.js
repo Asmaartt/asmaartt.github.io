@@ -51,5 +51,13 @@ $(document).ready(function(){
         dots:false,
     });
 
+    $(".gallery-carousel").owlCarousel({
+        singleItem: true,
+        loop:true,
+        center:true,
+        items: 1,
+        dots: true,
+    });
+
 
 });
