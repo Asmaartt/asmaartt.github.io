@@ -37,7 +37,7 @@ $(document).ready(function(){
         autoplayHoverPause:false,
         center:true,
         dots:false,
-    }).trigger("refresh.owl.carousel");
+    });
 
     $('#review-carousel').owlCarousel({
         loop:true,
@@ -49,16 +49,7 @@ $(document).ready(function(){
         items: 1,
         autoHeight:true,
         dots:false,
-    }).trigger("refresh.owl.carousel");
-
-    $('.gallery-carousel').owlCarousel({
-        singleItem: true,
-        autoWidth:true,
-        loop:true,
-        center:true,
-        items: 1,
-        dots: true,
-    }).trigger("refresh.owl.carousel");
+    });
 
 
 });
