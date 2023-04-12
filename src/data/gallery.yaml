@@ -80,14 +80,14 @@ paints:
       - /img/balance_3.JPG
       - /img/balance_1.JPG
       - /img/balance_2.JPG
-  - name: everytging
+  - name: Volcanilave
     price: 70
     description: The delicate pink hues of this paint capture the beauty of cherry blossoms in full bloom. Its smooth texture and vibrant color make it a great choice for creating beautiful floral paintings.
-    size: 16"x20"
+    size: 46"x55"
     pictures:
-      - https://fakeimg.pl/864x1080/
-      - https://fakeimg.pl/864x1080/
-      - https://fakeimg.pl/864x1080/
+      - /img/volcan_1.JPG
+      - /img/volcan_2.JPG
+      - /img/volcan_3.JPG
   - name: grace
     price: 70
     description: The delicate pink hues of this paint capture the beauty of cherry blossoms in full bloom. Its smooth texture and vibrant color make it a great choice for creating beautiful floral paintings.
