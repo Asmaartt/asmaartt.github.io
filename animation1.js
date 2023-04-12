@@ -86,17 +86,8 @@ function animate() {
                     targets: entry.target,
                     opacity: 1, // fade in
                     translateY: 0, // move up to original position
-                    duration: 1000, // Animation duration in milliseconds
+                    duration: 1500, // Animation duration in milliseconds
                     easing: 'easeOutQuad' // Animation easing function
-                });
-
-                $(entry.target.querySelector(".gallery-carousel")).owlCarousel({
-                    singleItem: true,
-                    autoWidth:true,
-                    loop:true,
-                    center:true,
-                    items: 1,
-                    dots: true,
                 });
 
                 // Stop observing the gallery item after it's been animated
