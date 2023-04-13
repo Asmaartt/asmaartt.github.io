@@ -1,24 +1,33 @@
-text: Welcome to our art gallery! We are proud to showcase a diverse collection of paintings from talented artists around the world. From stunning landscapes to beautiful floral paintings, our collection offers something for everyone. Take your time browsing through our exhibits and feel free to ask our knowledgeable staff any questions you may have. Whether you are a seasoned collector or a first-time art buyer, we are here to help you find the perfect piece to add to your collection. Thank you for visiting our gallery!
+text: Bienvenue dans la galerie de Asmaart. Vous y trouverez toutes ses oeuvres, passant par l'abstrait et le figuratif. Pleines de couleurs et de reliefs ! N'hesitez pas si vous avez des questions, un formulaire se trouve en bas de page. Asmaart se fera un plaisir de vous répondre.
 paints:
   - name: Cosmos
     price: 
-    description: This paint captures the essence of a bright blue sky on a clear day. Its smooth texture makes it easy to work with and perfect for both beginners and professionals alike.
-    size: 24"x36"
+    description: Oeuvre d'art originale. (2023)
+    Peinture acrylique abstraite sur toile.
+    Taille 92x73cm (profondeur 2,5cm) 
+    Les côtés sont peintes en noir. Signature au dos.
+    size: 92"x73"
     pictures:
       - /img/cosmos_1.JPG
       - /img/cosmos_2.jpg
       - /img/cosmos_3.JPG
   - name: Terre dorée
     price: 75
-    description: Bring the warmth and beauty of a sunset into your artwork with this vibrant paint. Its rich pigment and velvety texture make it a pleasure to work with.
-    size: 100"x50"
+    description: Oeuvre originale (2023)
+    Peinture abstraite sur toile 3D, en reliefs et texturée. Bombe, poudre d'or, feuilles d'or, peinture acrylique, coulures, empatement.
+    Taille 50x100cm (profondeur 3,5cm)
+    Les côtés sont peins en argent (haut) marron (bas). Signature au dos.
+    size: 50"x100"
     pictures:
       - /img/terredoree_1.JPG
       - /img/terredoree_2.JPG
       - /img/terredoree_3.JPG
   - name: Aqua Réflection
     price: 60
-    description: This deep green paint is perfect for capturing the lush beauty of a forest. Its thick consistency allows for easy blending and layering, making it a great choice for creating depth and dimension in your artwork.
+    description:  Oeuvre d'art originale (2023)
+    Peinture acrylique sur toile.
+    Taille 60x80cm (profondeur 1,5cm)
+    Les contours sont peins en noir. Signature sur la face, en bas à droite.
     size: 60"x80"
     pictures:
       - /img/aquareflec_1.JPG
@@ -26,7 +35,10 @@ paints:
       - /img/aquareflec_3.JPG
   - name: Nébuleuse
     price: 90
-    description: The warm, golden tones of this paint capture the beauty of a sunset in all its glory. Its smooth texture and high-quality pigment make it a great choice for creating stunning landscape paintings.
+    description:  Oeuvre d'art originale (2023)
+    Peinture sur toile en relief, texturé. Acrylique, coulures, empatements.
+    Toile 73x55cm (profondeur 2cm)
+    Les contours sont peins en noir. Signature au dos.
     size: 73"x55"
     pictures:
       - /img/nebuleuse_1.JPG
@@ -34,7 +46,10 @@ paints:
       - /img/nebuleuse_3.JPG
   - name: Eclipse de bonheur
     price: 55
-    description: Create stunning seascapes and beach scenes with this beautiful blue paint. Its smooth consistency and high-quality pigment make it perfect for capturing the beauty of the ocean and sky.
+    description: Oeuvre d'art originale (2022)
+    Peinture acrylique sur toile.
+    Taille 60x80cm (profondeur 1,5cm)
+    Les contours sont peins en noir. Signature sur la face, en bas à droite.
     size: 60"x80"
     pictures:
       - /img/eclipse_1.JPG
