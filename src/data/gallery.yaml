@@ -62,7 +62,11 @@ paints:
       - /img/eclipse_3.JPG
   - name: Blessure profonde
     price: 70
-    description: The delicate pink hues of this paint capture the beauty of cherry blossoms in full bloom. Its smooth texture and vibrant color make it a great choice for creating beautiful floral paintings.
+    description: |
+      Oeuvre d'art originale (2022)
+      Peinture acrylique sur toile, en relief.
+      Taille 46x55cm (profondeur 1,7cm)
+      Les contours sont peins en beige (couleur de toile). Signature au dos.
     size: 46"x55"
     pictures:
       - /img/blessure_1.JPG
@@ -70,23 +74,35 @@ paints:
       - /img/blessure_3.JPG
   - name: Eclat
     price: 70
-    description: The delicate pink hues of this paint capture the beauty of cherry blossoms in full bloom. Its smooth texture and vibrant color make it a great choice for creating beautiful floral paintings.
-    size: 16"x20"
+    description: |
+      Oeuvre d'art originale (2022)
+      Peinture acrylique sur toile.
+      Taille 46x55cm (profondeur 1,7cm)
+      Les contours sont peins en vert. Signature sur la face, en bas à droite.
+    size: 46"x55"
     pictures:
       - /img/eclat_1.JPG
       - /img/eclat_2.JPG
       - /img/eclat_3.JPG
   - name: Ocean
     price: 70
-    description: The delicate pink hues of this paint capture the beauty of cherry blossoms in full bloom. Its smooth texture and vibrant color make it a great choice for creating beautiful floral paintings.
-    size: 16"x20"
+    description: |
+      Oeuvre d'art originale (2022)
+      Peinture acrylique sur toile, en relief léger, texturé. Feuilles d'or, acrylique, empâtements.
+      Taille 46x55cm (profondeur 1,7cm)
+      Les contours sont peins en bleu. Signature au dos.
+    size: 46"x55"
     pictures:
       - /img/ocean_1.JPG
       - /img/ocean_2.JPG
       - /img/ocean_3.JPG
   - name: Jaguard
     price: 70
-    description: The delicate pink hues of this paint capture the beauty of cherry blossoms in full bloom. Its smooth texture and vibrant color make it a great choice for creating beautiful floral paintings.
+    description: |
+      Oeuvre d'art originale (2022)
+      Peinture acrylique sur toile.
+      Taille 40x50cm (profondeur 1,5cm)
+      Les contours sont peins en noir. Signature sur la face, en bas à droite.
     size: 40"x50"
     pictures:
       - /img/jaguard_1.JPG
@@ -94,7 +110,11 @@ paints:
       - /img/jaguard_3.JPG
   - name: Balance des sentiments
     price: 70
-    description: The delicate pink hues of this paint capture the beauty of cherry blossoms in full bloom. Its smooth texture and vibrant color make it a great choice for creating beautiful floral paintings.
+    description: |
+      Oeuvre d'art originale (2022)
+      Peinture acrylique sur toile.
+      Taille 30x40cm (profondeur 1,5cm)
+      Les contours sont peins en noir. Signature sur la face, en bas à droite.
     size: 30"x40"
     pictures:
       - /img/balance_3.JPG
@@ -102,7 +122,11 @@ paints:
       - /img/balance_2.JPG
   - name: Volcanilave
     price: 70
-    description: The delicate pink hues of this paint capture the beauty of cherry blossoms in full bloom. Its smooth texture and vibrant color make it a great choice for creating beautiful floral paintings.
+    description: |
+      Oeuvre d'art originale (2022)
+      Peinture acrylique sur toile, en relief, texturé. Empâtements, acrylique.
+      Taille 46x55cm (profondeur 1,7cm)
+      Les contours sont peins en gris foncé. Signature au dos.
     size: 46"x55"
     pictures:
       - /img/volcan_1.JPG
