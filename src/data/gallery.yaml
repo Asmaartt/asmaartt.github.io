@@ -2,7 +2,7 @@ text: Bienvenue dans la galerie de Asmaart. Vous y trouverez toutes ses oeuvres,
 paints:
   - name: Cosmos
     price: 
-    description: >
+    description: |
       Oeuvre d'art originale. (2023)
       Peinture acrylique abstraite sur toile.
       Taille 92x73cm (profondeur 2,5cm) 
@@ -14,7 +14,7 @@ paints:
       - /img/cosmos_3.JPG
   - name: Terre dorée
     price: 75
-    description: > 
+    description: |
       Oeuvre originale (2023)
       Peinture abstraite sur toile 3D, en reliefs et texturée. Bombe, poudre d'or, feuilles d'or, peinture acrylique, coulures, empatement.
       Taille 50x100cm (profondeur 3,5cm)
@@ -26,7 +26,7 @@ paints:
       - /img/terredoree_3.JPG
   - name: Aqua Réflection
     price: 60
-    description: > 
+    description: |
       Oeuvre d'art originale (2023)
       Peinture acrylique sur toile.
       Taille 60x80cm (profondeur 1,5cm)
@@ -38,7 +38,7 @@ paints:
       - /img/aquareflec_3.JPG
   - name: Nébuleuse
     price: 90
-    description:  >
+    description:  |
       Oeuvre d'art originale (2023)
       Peinture sur toile en relief, texturé. Acrylique, coulures, empatements.
       Toile 73x55cm (profondeur 2cm)
@@ -50,7 +50,7 @@ paints:
       - /img/nebuleuse_3.JPG
   - name: Eclipse de bonheur
     price: 55
-    description: >
+    description: |
       Oeuvre d'art originale (2022)
       Peinture acrylique sur toile.
       Taille 60x80cm (profondeur 1,5cm)
