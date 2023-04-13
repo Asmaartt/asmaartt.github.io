@@ -2,10 +2,11 @@ text: Bienvenue dans la galerie de Asmaart. Vous y trouverez toutes ses oeuvres,
 paints:
   - name: Cosmos
     price: 
-    description: Oeuvre d'art originale. (2023)
-    Peinture acrylique abstraite sur toile.
-    Taille 92x73cm (profondeur 2,5cm) 
-    Les côtés sont peintes en noir. Signature au dos.
+    description: >
+      Oeuvre d'art originale. (2023)
+      Peinture acrylique abstraite sur toile.
+      Taille 92x73cm (profondeur 2,5cm) 
+      Les côtés sont peintes en noir. Signature au dos.
     size: 92"x73"
     pictures:
       - /img/cosmos_1.JPG
@@ -13,10 +14,11 @@ paints:
       - /img/cosmos_3.JPG
   - name: Terre dorée
     price: 75
-    description: Oeuvre originale (2023)
-    Peinture abstraite sur toile 3D, en reliefs et texturée. Bombe, poudre d'or, feuilles d'or, peinture acrylique, coulures, empatement.
-    Taille 50x100cm (profondeur 3,5cm)
-    Les côtés sont peins en argent (haut) marron (bas). Signature au dos.
+    description: > 
+      Oeuvre originale (2023)
+      Peinture abstraite sur toile 3D, en reliefs et texturée. Bombe, poudre d'or, feuilles d'or, peinture acrylique, coulures, empatement.
+      Taille 50x100cm (profondeur 3,5cm)
+      Les côtés sont peins en argent (haut) marron (bas). Signature au dos.
     size: 50"x100"
     pictures:
       - /img/terredoree_1.JPG
@@ -24,10 +26,11 @@ paints:
       - /img/terredoree_3.JPG
   - name: Aqua Réflection
     price: 60
-    description:  Oeuvre d'art originale (2023)
-    Peinture acrylique sur toile.
-    Taille 60x80cm (profondeur 1,5cm)
-    Les contours sont peins en noir. Signature sur la face, en bas à droite.
+    description: > 
+      Oeuvre d'art originale (2023)
+      Peinture acrylique sur toile.
+      Taille 60x80cm (profondeur 1,5cm)
+      Les contours sont peins en noir. Signature sur la face, en bas à droite.
     size: 60"x80"
     pictures:
       - /img/aquareflec_1.JPG
@@ -35,10 +38,11 @@ paints:
       - /img/aquareflec_3.JPG
   - name: Nébuleuse
     price: 90
-    description:  Oeuvre d'art originale (2023)
-    Peinture sur toile en relief, texturé. Acrylique, coulures, empatements.
-    Toile 73x55cm (profondeur 2cm)
-    Les contours sont peins en noir. Signature au dos.
+    description:  >
+      Oeuvre d'art originale (2023)
+      Peinture sur toile en relief, texturé. Acrylique, coulures, empatements.
+      Toile 73x55cm (profondeur 2cm)
+      Les contours sont peins en noir. Signature au dos.
     size: 73"x55"
     pictures:
       - /img/nebuleuse_1.JPG
@@ -46,10 +50,11 @@ paints:
       - /img/nebuleuse_3.JPG
   - name: Eclipse de bonheur
     price: 55
-    description: Oeuvre d'art originale (2022)
-    Peinture acrylique sur toile.
-    Taille 60x80cm (profondeur 1,5cm)
-    Les contours sont peins en noir. Signature sur la face, en bas à droite.
+    description: >
+      Oeuvre d'art originale (2022)
+      Peinture acrylique sur toile.
+      Taille 60x80cm (profondeur 1,5cm)
+      Les contours sont peins en noir. Signature sur la face, en bas à droite.
     size: 60"x80"
     pictures:
       - /img/eclipse_1.JPG
