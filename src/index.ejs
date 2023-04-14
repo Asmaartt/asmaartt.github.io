@@ -47,11 +47,14 @@
         <h2 class="text-lg md:text-2xl lg:text-4xl font-bold text-center pt-8 pb-4 px-2 uppercase font-light">
             NOUVEAUTÉS
         </h2>
-        <div id="main-carousel" class="owl-carousel owl-theme py-4 h-[40vh] lg:h-[60vh]">
-            <% images.forEach(function(path) { %>
-                <img class="carousel-img" src="<%= path %>">
-            <% }) %>
-        </div>
+        <a href="gallery.html">
+            <div id="main-carousel" class="owl-carousel owl-theme py-4 h-[40vh] lg:h-[60vh]">
+                <% images.forEach(function(path) { %>
+                    <img class="carousel-img" src="<%= path %>">
+                <% }) %>
+            </div>
+        </a>
+
     </div>
 
 
