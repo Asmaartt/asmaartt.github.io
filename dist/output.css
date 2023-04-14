@@ -1281,6 +1281,14 @@ blockquote:after {
     margin-bottom: 0px;
   }
 
+  .md\:inline {
+    display: inline;
+  }
+
+  .md\:hidden {
+    display: none;
+  }
+
   .md\:w-1\/2 {
     width: 50%;
   }
