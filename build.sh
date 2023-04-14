@@ -1,8 +1,7 @@
 mkdir -p public/dist
 cp -r Orpheus public/dist/Orpheus
 touch public/.nojekyll
-npx tailwindcss -i ./src/input.css -o ./dist/output.css
-cp -r dist/ public/dist
+npx tailwindcss -i ./src/input.css -o ./public/dist/output.css
 cp hamburgers.css public/dist/hamburgers.css
 cp script.js public/script.js
 cp animation.js public/animation.js
