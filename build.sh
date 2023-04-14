@@ -1,5 +1,5 @@
 mkdir -p public/dist
-cp -r Orpheus public/dist/Orpheus
+cp orpheus.ttf public/dist/orpheus.ttf
 touch public/.nojekyll
 npx tailwindcss -i ./src/input.css -o ./public/dist/output.css
 cp hamburgers.css public/dist/hamburgers.css
