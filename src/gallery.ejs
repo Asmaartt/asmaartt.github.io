@@ -8,7 +8,7 @@
     <link href="/dist/hamburgers.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Montserrat&family=Noto+Serif&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="node_modules/owl.carousel/dist/assets/owl.carousel.min.css" />
     <link rel="stylesheet" href="node_modules/owl.carousel/dist/assets/owl.theme.default.min.css" />
     <link rel="stylesheet" href="node_modules/lightbox2/dist/css/lightbox.min.css">
@@ -41,15 +41,20 @@
         <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
             <% paints.forEach(function(paint) { %>
                 <div class="gallery-item shadow-lg rounded-lg overflow-hidden relative max-w-[90vw] md:max-w-[35vw]">
+                    <% if (paint.available) { %>
+                        <div class="ribbon"><span style="color: #CDAC8C">DISPONIBLE</span></div>
+                    <% } else { %>
+                            <div class="ribbon"><span style="color: #8d8d8d">VENDU</span></div>
+                    <%}%>
                     <div class="gallery-carousel owl-carousel owl-theme">
                         <% paint.pictures.forEach(function(picture) { %>
-                            <a href="<%= picture %>" data-lightbox="gallery" data-title="<%= paint.description %>" class="block">
+                            <a href="<%= picture %>" data-lightbox="gallery" data-title="<%= paint.description.replace("\n", "&#013;") %>" class="block">
                                 <img class="object-cover object-center max-w-[90vw] md:max-w-[35vw]" src="<%= picture %>" alt="<%= paint.name %>" data-lightbox="gallery">
                             </a>
                         <% }) %>
                     </div>
-                    <div class="p-2 text-center">
-                        <h3 class="font-semibold text-lg mb-2"><%= paint.name %></h3>
+                    <div class="text-center">
+                        <h3 class="font-semibold text-lg mb-2 paint-name"><%= paint.name %></h3>
                         <p class="text-gray-600 mb-2"><%= paint.size %></p>
                         <p class="text-gray-600 mb-4"><%= paint.price %>€</p>
                     </div>
@@ -63,7 +68,7 @@
         <h2 class="text-lg md:text-2xl lg:text-4xl font-bold text-center pt-4 pb-8 px-2 uppercase font-light" id="contact">
             CONTACT
         </h2>
-        <p class="p-4 lg:px-32 text-center  font-bold">
+        <p class="p-4 lg:px-32 text-center font-bold contact">
             <%= contact %>
         </p>
     </div>

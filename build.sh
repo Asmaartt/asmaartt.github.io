@@ -1,4 +1,5 @@
-mkdir -p public
+mkdir -p public/dist
+cp -r Orpheus public/dist/Orpheus
 touch public/.nojekyll
 npx tailwindcss -i ./src/input.css -o ./dist/output.css
 cp -r dist/ public/dist
@@ -8,7 +9,6 @@ cp animation.js public/animation.js
 cp animation1.js public/animation1.js
 node image_compress.js
 cp -r node_modules public/node_modules
-
 cd src
 
 js-yaml data/index.yaml > index.json

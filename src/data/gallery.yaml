@@ -12,6 +12,7 @@ paints:
       - /img/cosmos_1.JPG
       - /img/cosmos_2.jpg
       - /img/cosmos_3.JPG
+    available: true
   - name: Terre dorée
     price: 75
     description: |
@@ -24,6 +25,7 @@ paints:
       - /img/terredoree_1.JPG
       - /img/terredoree_2.JPG
       - /img/terredoree_3.JPG
+    available: false
   - name: Aqua Réflection
     price: 60
     description: |
@@ -36,6 +38,7 @@ paints:
       - /img/aquareflec_1.JPG
       - /img/aquareflec_22.jpg
       - /img/aquareflec_3.JPG
+    available: true
   - name: Nébuleuse
     price: 90
     description:  |
@@ -48,6 +51,7 @@ paints:
       - /img/nebuleuse_1.JPG
       - /img/nebuleuse_2.JPG
       - /img/nebuleuse_3.JPG
+    available: true
   - name: Eclipse de bonheur
     price: 55
     description: |
@@ -60,6 +64,7 @@ paints:
       - /img/eclipse_1.JPG
       - /img/eclipse_2.JPG
       - /img/eclipse_3.JPG
+    available: true
   - name: Blessure profonde
     price: 70
     description: |
@@ -72,6 +77,7 @@ paints:
       - /img/blessure_1.JPG
       - /img/blessure_2.JPG
       - /img/blessure_3.JPG
+    available: true
   - name: Eclat
     price: 70
     description: |
@@ -84,6 +90,7 @@ paints:
       - /img/eclat_1.JPG
       - /img/eclat_2.JPG
       - /img/eclat_3.JPG
+    available: true
   - name: Ocean
     price: 70
     description: |
@@ -96,6 +103,7 @@ paints:
       - /img/ocean_1.JPG
       - /img/ocean_2.JPG
       - /img/ocean_3.JPG
+    available: true
   - name: Jaguard
     price: 70
     description: |
@@ -108,6 +116,7 @@ paints:
       - /img/jaguard_1.JPG
       - /img/jaguard_2.JPG
       - /img/jaguard_3.JPG
+    available: true
   - name: Balance des sentiments
     price: 70
     description: |
@@ -120,6 +129,7 @@ paints:
       - /img/balance_3.JPG
       - /img/balance_1.JPG
       - /img/balance_2.JPG
+    available: true
   - name: Volcanilave
     price: 70
     description: |
@@ -132,6 +142,7 @@ paints:
       - /img/volcan_1.JPG
       - /img/volcan_2.JPG
       - /img/volcan_3.JPG
+    available: true
   - name: grace
     price: 70
     description: The delicate pink hues of this paint capture the beauty of cherry blossoms in full bloom. Its smooth texture and vibrant color make it a great choice for creating beautiful floral paintings.
@@ -140,5 +151,6 @@ paints:
       - https://fakeimg.pl/864x1080/
       - https://fakeimg.pl/864x1080/
       - https://fakeimg.pl/864x1080/
+    available: true
 
 contact:  Merci pour votre visite sur notre site ! Si vous avez des questions, souhaitez passer une commande personalisée ou faire un achat d'une toile en ligne, n'hésitez pas à me contacter en utilisant le formulaire ci-dessous. Vous pouvez également vous tenir à jour des dernières nouveautés sur Instagram @asmaart ! Au plaisir de répondre à vos demandes !

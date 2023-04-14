@@ -29,16 +29,6 @@ function toggleMenu() {
 }
 
 $(document).ready(function(){
-    $('#main-carousel').owlCarousel({
-        loop:true,
-        autoWidth:true,
-        autoplay:true,
-        autoplayTimeout:5000,
-        autoplayHoverPause:false,
-        center:true,
-        dots:false,
-    });
-
     $('#review-carousel').owlCarousel({
         loop:true,
         autoWidth:true,
