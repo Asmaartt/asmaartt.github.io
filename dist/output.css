@@ -972,7 +972,7 @@ video {
 @font-face {
   font-family: "Orpheus";
 
-  src: url("/dist/orpheus.ttf") format("truetype");
+  src: url("../../dist/orpheus.ttf") format("truetype");
 }
 
 * {
