@@ -28,6 +28,11 @@ function toggleMenu() {
     }
 }
 
+function bioNext(caller) {
+    document.getElementById("bio-next").classList.remove("hidden");
+    document.getElementById("bio-next-button").remove()
+}
+
 $(document).ready(function(){
     $('#review-carousel').owlCarousel({
         loop:true,
