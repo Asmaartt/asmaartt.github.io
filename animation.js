@@ -60,11 +60,21 @@ function animate() {
     observer1 = new IntersectionObserver(entries => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
+                $('#main-carousel').owlCarousel({
+                    loop:true,
+                    autoWidth:true,
+                    autoplay:true,
+                    autoplayTimeout:5000,
+                    autoplayHoverPause:false,
+                    center:true,
+                    dots:false,
+                });
                 anime({
                     targets: carouselContainer,
                     opacity: [0, 1],
                     duration: 2000,
                     easing: 'easeInOutQuad',
+
                 });
 
                 observer1.disconnect();

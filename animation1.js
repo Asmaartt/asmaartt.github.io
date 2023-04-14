@@ -14,27 +14,14 @@ function set() {
 
 function animate() {
     var bioSection = document.querySelector('#gallery-text');
-    var bioAnimation = anime({
+    anime({
         targets: bioSection,
         opacity: [0, 1],
-        translateY: [100, 0],
+        translateY: [1000, 0],
         easing: 'easeOutExpo',
-        duration: 1500,
-        autoplay: false
+        duration: 2000,
+        autoplay: true
     });
-
-    function handleBioAnimation() {
-        var bioSectionPosition = bioSection.getBoundingClientRect();
-        var windowHeight = window.innerHeight;
-
-        if (bioSectionPosition.top < windowHeight * 0.9) {
-            bioAnimation.play();
-            window.removeEventListener('scroll', handleBioAnimation);
-        }
-    }
-
-    window.addEventListener('scroll', handleBioAnimation);
-
 
     const form = document.querySelector('#contact-form');
     const fields = form.querySelectorAll('input, textarea');
