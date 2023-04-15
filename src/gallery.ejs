@@ -48,7 +48,7 @@
                     <%}%>
                     <div class="gallery-carousel owl-carousel owl-theme">
                         <% paint.pictures.forEach(function(picture) { %>
-                            <a href="<%= picture %>" data-lightbox="gallery" data-title="<%= paint.description.replace("\n", "&#013;") %>" class="block">
+                            <a href="<%= picture %>" data-lightbox="gallery" data-title="<%= paint.description %>" class="block">
                                 <img class="object-cover object-center max-w-[90vw] md:max-w-[35vw]" src="<%= picture %>" alt="<%= paint.name %>" data-lightbox="gallery">
                             </a>
                         <% }) %>
