@@ -37,10 +37,12 @@
         </div>
     </div>
 
+    <div id="dummy" class="h-screen"></div>
+
     <div class=" md:max-w-[80%] mx-auto px-4 sm:px-6 lg:px-8 mt-10">
         <div class="grid grid-cols-1 md:grid-cols-2 gap-6" style="padding-left: 5px;">
             <% paints.forEach(function(paint, i) { %>
-            <div class="animate__animated <%= i % 2 === 0 ? "animate__fadeInTopLeft" : "animate__fadeInTopRight" %> animate__slow">
+            <div class="animate__animated <%= i % 2 === 0 ? "animate__fadeInTopLeft" : "animate__fadeInTopRight" %> invisible">
                 <div class="gallery-item shadow-lg rounded-lg overflow-hidden relative w-[90vw] md:w-[35vw]">
                     <% if (paint.available) { %>
                         <div class="ribbon"><span style="color: #CDAC8C">DISPONIBLE</span></div>
