@@ -52,7 +52,7 @@
 
   </div>
   <div class="w-full lg:hidden"></div>
-  <div id="menu-container" class="hidden fixed w-full lg:static h-full top-[72px] right-0 px-12 lg:block lg:bg-transparent lg:w-auto lg:p-0">
+  <div id="menu-container" class="hidden fixed w-full lg:static h-full top-[72px] right-0 px-12 lg:block lg:bg-transparent lg:w-auto lg:p-0 animate__animated animate__faster">
     <div id="menu" class="flex lg:flex my-auto mx-auto lg:mx-0 h-screen lg:h-auto flex-col lg:flex-row justify-evenly">
       <a class="p-0"></a>
       <a href="index.html">Accueil</a>
@@ -80,144 +80,173 @@
 
 
     <div class="flex flex-col lg:flex-row lg:flex-row-reverse">
-        <div class="lg:w-1/2">
+        <div class="lg:w-1/2 animate__animated animate__zoomIn">
             <img id="main-img" src="/img/profile.jpeg" class="px-24 pb-4 mx-auto lg:py-10 max-w-[23rem] lg:max-w-xl" style="border-radius: 50%">
         </div>
-        <div id="bio" class="lg:w-1/2 text-center text-lg lg:text-xl m-auto px-8 lg:pl-32 lg:pr-0">
+        <div id="bio" class="lg:w-1/2 text-center text-lg lg:text-xl m-auto px-8 lg:pl-32 lg:pr-0 animate__animated animate__zoomInDown animate__slower">
             <span>Asma S. au nom d&#39;artiste Asmaart est une artiste autodidacte de 26 ans. Née à Brive et demeure à Bordeaux. Elle peint depuis maintenant 3 ans, mais sa passion pour l&#39;art s&#39;est développé depuis son plus jeune âge.</span> <span class="hidden md:inline" id="bio-next">En effet Asma à toujours été très créative. Son travail est caractérisé par des couleurs vibrantes, des formes audacieuses et des textures uniques qui attirent l&#39;attention et suscite l&#39;émotion. Elle aime osciller entre peinture abstraite et peinture figurative. Asmaart est constamment à la recherche de nouvelles techniques et de nouvelles approches pour explorer sa créativité. Elle travaille avec différents médiums, y compris la peinture acrylique, le collage et des techniques de coulures, afin de créer des oeuvres uniques et intemporelles.</span><a class="md:hidden" href="#" onclick="bioNext()" id="bio-next-button" style="color: #CDAC8C">Lire la suite...</a>
         </div>
     </div>
 
-    <div id="main-carousel-container">
+    <div class="">
         <h2 class="text-lg md:text-2xl lg:text-4xl font-bold text-center pt-8 pb-4 px-2 uppercase font-light">
-            NOUVEAUTÉS
+            DERNIÈRES NOUVEAUTÉS
         </h2>
-        <a href="gallery.html">
-            <div id="main-carousel" class="owl-carousel owl-theme py-4 h-[40vh] lg:h-[60vh]">
-                
-                    <img class="carousel-img" src="/img/1.jpeg">
-                
-                    <img class="carousel-img" src="/img/2.jpeg">
-                
-                    <img class="carousel-img" src="/img/3.jpeg">
-                
-                    <img class="carousel-img" src="/img/4.jpeg">
-                
-            </div>
-        </a>
+        <div class="animate__animated animate__zoomIn animate__slower">
+            <a href="gallery.html">
+                <div id="new-carousel" class="owl-carousel owl-theme md:!hidden">
+                    
+                        <img class="px-2" src="/img/cosmos_1.JPG">
+                    
+                        <img class="px-2" src="/img/terredoree_1.JPG">
+                    
+                        <img class="px-2" src="/img/aquareflec_1.JPG">
+                    
+                </div>
+                <div class="justify-between hidden md:flex">
+                    
+                        <img class="px-2" style="width: calc(100% / 3)" src="/img/cosmos_1.JPG">
+                    
+                        <img class="px-2" style="width: calc(100% / 3)" src="/img/terredoree_1.JPG">
+                    
+                        <img class="px-2" style="width: calc(100% / 3)" src="/img/aquareflec_1.JPG">
+                    
+                </div>
+            </a>
+        </div>
+    </div>
 
+
+    <div class="animate__animated animate__fadeInLeft animate__delay-1s">
+        <div id="main-carousel-container" class="pt-4">
+            <a href="gallery.html">
+                <div id="main-carousel" class="owl-carousel owl-theme py-4 h-[35vh] lg:h-[45vh]">
+                    
+                        <img class="carousel-img" src="/img/1.jpeg">
+                    
+                        <img class="carousel-img" src="/img/2.jpeg">
+                    
+                        <img class="carousel-img" src="/img/3.jpeg">
+                    
+                        <img class="carousel-img" src="/img/4.jpeg">
+                    
+                </div>
+            </a>
+        </div>
     </div>
 
 
     <div id="review-container">
     <h2 class="text-lg md:text-2xl lg:text-4xl font-bold text-center pt-12 pb-8 px-2 uppercase font-light">
-        AVIS
+        AVIS CLIENTS
     </h2>
-    <div id="review-carousel" class="owl-carousel owl-theme relative">
+    <div class="animate__animated animate__delay-1s animate__backInUp">
+        <div id="review-carousel" class="owl-carousel owl-theme relative">
 
-        
-            <div class="w-screen">
-                <div class="flex flex-col md:flex-row items-center mx-6 md:mx-10 lg:mx-52  px-2 md:px-10 py-4 feedback">
-                    <div class="md:w-1/4">
-                        <img src="/img/dorothee.jpg" alt="Customer Image" class="rounded-full h-full w-full max-w-[10rem] md:max-w-[16rem] object-cover p-4">
-                    </div>
-                    <div class="w-3/4 px-8 md:px-11">
-                        <div class="mb-2">
-                            <h3 class="text-3xl font-semibold">Dorothée</h3>
-                            <p class="text-gray-600">France</p>
+            
+                <div class="w-screen">
+                    <div class="flex flex-col md:flex-row items-center mx-6 md:mx-10 lg:mx-52  px-2 md:px-10 py-4 feedback">
+                        <div class="md:w-1/4">
+                            <img src="/img/dorothee.jpg" alt="Customer Image" class="rounded-full h-full w-full max-w-[10rem] md:max-w-[16rem] object-cover p-4">
                         </div>
-                        <div class="md:text-xl text-gray-800 relative">
-                            <blockquote>Je l&#39;ai offert hier à ma fille, elle est ravie. Je vous remercie pour ce joli tableau.</blockquote>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        
-            <div class="w-screen">
-                <div class="flex flex-col md:flex-row items-center mx-6 md:mx-10 lg:mx-52  px-2 md:px-10 py-4 feedback">
-                    <div class="md:w-1/4">
-                        <img src="/img/sandra.jpg" alt="Customer Image" class="rounded-full h-full w-full max-w-[10rem] md:max-w-[16rem] object-cover p-4">
-                    </div>
-                    <div class="w-3/4 px-8 md:px-11">
-                        <div class="mb-2">
-                            <h3 class="text-3xl font-semibold">Sandra</h3>
-                            <p class="text-gray-600">France</p>
-                        </div>
-                        <div class="md:text-xl text-gray-800 relative">
-                            <blockquote>Peinture à la hauteur des attentes, tu as bien su comprendre ce que je cherchais à transmettre. Je te recommande !</blockquote>
+                        <div class="w-3/4 px-8 md:px-11">
+                            <div class="mb-2">
+                                <h3 class="text-3xl font-semibold">Dorothée</h3>
+                                <p class="text-gray-600">France</p>
+                            </div>
+                            <div class="md:text-xl text-gray-800 relative">
+                                <blockquote>Je l&#39;ai offert hier à ma fille, elle est ravie. Je vous remercie pour ce joli tableau.</blockquote>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        
-            <div class="w-screen">
-                <div class="flex flex-col md:flex-row items-center mx-6 md:mx-10 lg:mx-52  px-2 md:px-10 py-4 feedback">
-                    <div class="md:w-1/4">
-                        <img src="/img/laurent.jpg" alt="Customer Image" class="rounded-full h-full w-full max-w-[10rem] md:max-w-[16rem] object-cover p-4">
-                    </div>
-                    <div class="w-3/4 px-8 md:px-11">
-                        <div class="mb-2">
-                            <h3 class="text-3xl font-semibold">Laurent</h3>
-                            <p class="text-gray-600">France</p>
+            
+                <div class="w-screen">
+                    <div class="flex flex-col md:flex-row items-center mx-6 md:mx-10 lg:mx-52  px-2 md:px-10 py-4 feedback">
+                        <div class="md:w-1/4">
+                            <img src="/img/sandra.jpg" alt="Customer Image" class="rounded-full h-full w-full max-w-[10rem] md:max-w-[16rem] object-cover p-4">
                         </div>
-                        <div class="md:text-xl text-gray-800 relative">
-                            <blockquote>Belle surprise pour ma mère. Très satisfait, mieux que je l&#39;imaginais !</blockquote>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        
-            <div class="w-screen">
-                <div class="flex flex-col md:flex-row items-center mx-6 md:mx-10 lg:mx-52  px-2 md:px-10 py-4 feedback">
-                    <div class="md:w-1/4">
-                        <img src="/img/amine.jpg" alt="Customer Image" class="rounded-full h-full w-full max-w-[10rem] md:max-w-[16rem] object-cover p-4">
-                    </div>
-                    <div class="w-3/4 px-8 md:px-11">
-                        <div class="mb-2">
-                            <h3 class="text-3xl font-semibold">Amine</h3>
-                            <p class="text-gray-600">France</p>
-                        </div>
-                        <div class="md:text-xl text-gray-800 relative">
-                            <blockquote>Bravo à toi pour ce tableau et merci il est top. Comme je voulais, rien à dire, j&#39;hésiterai pas revenir vers toi si besoin et tu es aussi très sympa.</blockquote>
+                        <div class="w-3/4 px-8 md:px-11">
+                            <div class="mb-2">
+                                <h3 class="text-3xl font-semibold">Sandra</h3>
+                                <p class="text-gray-600">France</p>
+                            </div>
+                            <div class="md:text-xl text-gray-800 relative">
+                                <blockquote>Peinture à la hauteur des attentes, tu as bien su comprendre ce que je cherchais à transmettre. Je te recommande !</blockquote>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        
-            <div class="w-screen">
-                <div class="flex flex-col md:flex-row items-center mx-6 md:mx-10 lg:mx-52  px-2 md:px-10 py-4 feedback">
-                    <div class="md:w-1/4">
-                        <img src="/img/judith.jpg" alt="Customer Image" class="rounded-full h-full w-full max-w-[10rem] md:max-w-[16rem] object-cover p-4">
-                    </div>
-                    <div class="w-3/4 px-8 md:px-11">
-                        <div class="mb-2">
-                            <h3 class="text-3xl font-semibold">Judith</h3>
-                            <p class="text-gray-600">France</p>
+            
+                <div class="w-screen">
+                    <div class="flex flex-col md:flex-row items-center mx-6 md:mx-10 lg:mx-52  px-2 md:px-10 py-4 feedback">
+                        <div class="md:w-1/4">
+                            <img src="/img/laurent.jpg" alt="Customer Image" class="rounded-full h-full w-full max-w-[10rem] md:max-w-[16rem] object-cover p-4">
                         </div>
-                        <div class="md:text-xl text-gray-800 relative">
-                            <blockquote>Merci infiniment pour ce tableau, vous avez su suivre avec détails mes demandes et exigences. Une merveilleuse peinture. Merci pour votre temps et votre gentillesse !</blockquote>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        
-            <div class="w-screen">
-                <div class="flex flex-col md:flex-row items-center mx-6 md:mx-10 lg:mx-52  px-2 md:px-10 py-4 feedback">
-                    <div class="md:w-1/4">
-                        <img src="/img/placeholder.jpeg" alt="Customer Image" class="rounded-full h-full w-full max-w-[10rem] md:max-w-[16rem] object-cover p-4">
-                    </div>
-                    <div class="w-3/4 px-8 md:px-11">
-                        <div class="mb-2">
-                            <h3 class="text-3xl font-semibold">Jane Smith</h3>
-                            <p class="text-gray-600">New York City</p>
-                        </div>
-                        <div class="md:text-xl text-gray-800 relative">
-                            <blockquote>I absolutely love this paint! The color is vibrant and it applies smoothly. I highly recommend it.</blockquote>
+                        <div class="w-3/4 px-8 md:px-11">
+                            <div class="mb-2">
+                                <h3 class="text-3xl font-semibold">Laurent</h3>
+                                <p class="text-gray-600">France</p>
+                            </div>
+                            <div class="md:text-xl text-gray-800 relative">
+                                <blockquote>Belle surprise pour ma mère. Très satisfait, mieux que je l&#39;imaginais !</blockquote>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        
+            
+                <div class="w-screen">
+                    <div class="flex flex-col md:flex-row items-center mx-6 md:mx-10 lg:mx-52  px-2 md:px-10 py-4 feedback">
+                        <div class="md:w-1/4">
+                            <img src="/img/amine.jpg" alt="Customer Image" class="rounded-full h-full w-full max-w-[10rem] md:max-w-[16rem] object-cover p-4">
+                        </div>
+                        <div class="w-3/4 px-8 md:px-11">
+                            <div class="mb-2">
+                                <h3 class="text-3xl font-semibold">Amine</h3>
+                                <p class="text-gray-600">France</p>
+                            </div>
+                            <div class="md:text-xl text-gray-800 relative">
+                                <blockquote>Bravo à toi pour ce tableau et merci il est top. Comme je voulais, rien à dire, j&#39;hésiterai pas revenir vers toi si besoin et tu es aussi très sympa.</blockquote>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="w-screen">
+                    <div class="flex flex-col md:flex-row items-center mx-6 md:mx-10 lg:mx-52  px-2 md:px-10 py-4 feedback">
+                        <div class="md:w-1/4">
+                            <img src="/img/judith.jpg" alt="Customer Image" class="rounded-full h-full w-full max-w-[10rem] md:max-w-[16rem] object-cover p-4">
+                        </div>
+                        <div class="w-3/4 px-8 md:px-11">
+                            <div class="mb-2">
+                                <h3 class="text-3xl font-semibold">Judith</h3>
+                                <p class="text-gray-600">France</p>
+                            </div>
+                            <div class="md:text-xl text-gray-800 relative">
+                                <blockquote>Merci infiniment pour ce tableau, vous avez su suivre avec détails mes demandes et exigences. Une merveilleuse peinture. Merci pour votre temps et votre gentillesse !</blockquote>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="w-screen">
+                    <div class="flex flex-col md:flex-row items-center mx-6 md:mx-10 lg:mx-52  px-2 md:px-10 py-4 feedback">
+                        <div class="md:w-1/4">
+                            <img src="/img/placeholder.jpeg" alt="Customer Image" class="rounded-full h-full w-full max-w-[10rem] md:max-w-[16rem] object-cover p-4">
+                        </div>
+                        <div class="w-3/4 px-8 md:px-11">
+                            <div class="mb-2">
+                                <h3 class="text-3xl font-semibold">Jane Smith</h3>
+                                <p class="text-gray-600">New York City</p>
+                            </div>
+                            <div class="md:text-xl text-gray-800 relative">
+                                <blockquote>I absolutely love this paint! The color is vibrant and it applies smoothly. I highly recommend it.</blockquote>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+        </div>
     </div>
     </div>
 
@@ -225,13 +254,13 @@
         <h2 class="text-lg md:text-2xl lg:text-4xl font-bold text-center pt-4 pb-8 px-2 uppercase font-light" id="contact">
             CONTACT
         </h2>
-        <p class="p-4 lg:px-32 text-center font-bold contact text-lg lg:text-xl">
+        <p class="p-4 lg:px-32 text-center font-bold contact text-lg lg:text-xl animate__animated animate__pulse animate__repeat-3">
             Merci pour votre visite sur notre site ! Si vous avez des questions, souhaitez passer une commande personalisée ou faire un achat d&#39;une toile en ligne, n&#39;hésitez pas à me contacter en utilisant le formulaire ci-dessous. Vous pouvez également vous tenir à jour des dernières nouveautés sur Instagram @asmaart ! Au plaisir de répondre à vos demandes !
         </p>
     </div>
 
 
-    <form id="contact-form" action="https://api.web3forms.com/submit" method="POST" class="p-4 lg:px-32 lg:pb-10">
+    <form id="contact-form" action="https://api.web3forms.com/submit" method="POST" class="p-4 lg:px-32 lg:pb-10 animate__animated animate__delay-1s animate__zoomIn">
     <input type="hidden" name="access_key" value="04674b6d-d4e5-4c07-b44b-fcea80a58e3b">
     <div class="flex flex-wrap mb-6">
         <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
@@ -267,8 +296,6 @@
 <script src="https://kit.fontawesome.com/e04d7c62a8.js" crossorigin="anonymous"></script>
 <script src="/node_modules/jquery/dist/jquery.js"></script>
 <script src="/node_modules/owl.carousel/dist/owl.carousel.min.js"></script>
-<script src="/node_modules/animejs/lib/anime.min.js"></script>
 <script src="../script.js"></script>
-<script src="../animation.js"></script>
 </body>
 </html>

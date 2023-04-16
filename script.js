@@ -1,30 +1,22 @@
 function toggleMenu() {
-    document.getElementById("menu-button").classList.toggle("is-active")
+    const isActive = document.getElementById("menu-button").classList.toggle("is-active")
     const menu = document.getElementById("menu-container");
+
+    if (isActive) {
+        menu.classList.remove("animate__bounceOut");
+        menu.classList.add("animate__flipInY");
+    } else {
+        menu.classList.remove("animate__flipInY");
+        menu.classList.add("animate__bounceOut");
+    }
+
     if (menu.classList.contains("hidden")) {
         // Show the menu with animation
         document.body.style.overflow = 'hidden';
-        anime({
-            targets: menu,
-            opacity: [0, 0.9],
-            //height: "100vh",
-            duration: 250,
-            easing: 'easeOutQuad'
-        });
         menu.classList.remove("hidden");
     } else {
         // Hide the menu with animation
         document.body.style.overflow = 'auto';
-        anime({
-            targets: menu,
-            opacity: [0.9, 0],
-            //height: 0,
-            duration: 250,
-            easing: 'easeInQuad',
-            complete: function() {
-                menu.classList.add("hidden");
-            }
-        });
     }
 }
 
@@ -32,6 +24,25 @@ function bioNext(caller) {
     document.getElementById("bio-next").classList.remove("hidden");
     document.getElementById("bio-next-button").remove()
 }
+
+function animate(entries) {
+    entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+            entry.target.classList.remove("notransition")
+
+            observer.unobserve(entry.target)
+        }
+    })
+}
+
+const observer = new IntersectionObserver(animate);
+
+document.querySelectorAll(".animate__animated").forEach((el) => {
+        el.classList.add("notransition")
+        observer.observe(el);
+    }
+)
+
 
 $(document).ready(function(){
     $('#review-carousel').owlCarousel({
@@ -46,6 +57,16 @@ $(document).ready(function(){
         dots:false,
     });
 
+    $('#main-carousel').owlCarousel({
+        loop:true,
+        autoWidth:true,
+        autoplay:true,
+        autoplayTimeout:5000,
+        autoplayHoverPause:false,
+        center:true,
+        dots:false,
+    });
+
     $(".gallery-carousel").owlCarousel({
         singleItem: true,
         loop:true,
@@ -54,5 +75,17 @@ $(document).ready(function(){
         dots: true,
     });
 
-
+    $("#new-carousel").owlCarousel({
+        stagePadding: 25,
+        singleItem: true,
+        center:true,
+        loop:true,
+        items: 1,
+        dots: true,
+        autoHeight:true,
+    });
 });
+
+
+
+
