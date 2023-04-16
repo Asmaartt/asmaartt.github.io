@@ -1,3 +1,5 @@
+@import "../node_modules/animate.css/animate.min.css";
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -8,13 +10,13 @@
 }
 
 * {
-    font-family: 'Marcellus', serif;
+    font-family: 'Orpheus', 'Marcellus', serif;
     color: #333333;
 }
 
-.contact, .paint-name, .lb-caption {
-    font-family: 'Orpheus', 'Marcellus', serif;
-}
+/*.contact, .paint-name, .lb-caption {*/
+/*    font-family: 'Orpheus', 'Marcellus', serif;*/
+/*}*/
 
 html {
     scroll-behavior: smooth;
@@ -60,7 +62,7 @@ video {
 }
 
 .carousel-img {
-    @apply h-[40vh] lg:h-[60vh] object-cover;
+    @apply h-[35vh] lg:h-[45vh] object-cover;
     width: auto!important;
 }
 
@@ -216,4 +218,10 @@ blockquote:after {
     border-right: 3px solid #FFFFFF;
     border-bottom: 3px solid transparent;
     border-top: 3px solid #FFFFFF;
+}
+
+.notransition {
+    transition-property: none !important;
+    transform: none !important;
+    animation: none !important;
 }
