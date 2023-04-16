@@ -25,9 +25,32 @@ function bioNext(caller) {
     document.getElementById("bio-next-button").remove()
 }
 
+// function isElementAboveMiddle(rect) {
+//     // Calculate the vertical position of the middle of the viewport
+//     var viewportHeight = window.screen.availHeight;
+//     var viewportMiddleY = viewportHeight / 2;
+//
+//     // Check if the top of the element is above the middle of the viewport
+//     if (rect.top > viewportMiddleY) {
+//         return true; // The top of the element is above the middle of the viewport
+//     } else {
+//         return false; // The top of the element is below the middle of the viewport or in the middle of the viewport
+//     }
+// }
+
 function animate(entries) {
     entries.forEach((entry) => {
         if (entry.isIntersecting) {
+            const carousel = entry.target.querySelector(".gallery-carousel");
+            if (carousel !== null /*&& isElementAboveMiddle(entry.boundingClientRect)*/) {
+                entry.target.classList.remove("invisible");
+                entry.target.classList.remove("notransition")
+                observer.unobserve(entry.target);
+            } else if (carousel === null) {
+                entry.target.classList.remove("notransition")
+                observer.unobserve(entry.target);
+            }
+
             // const carousel = entry.target.querySelector(".gallery-carousel");
             // if (carousel !== null && entry.boundingClientRect.top > 0) {
             //     $(carousel).owlCarousel({
@@ -47,21 +70,16 @@ function animate(entries) {
             //     entry.target.classList.remove("notransition")
             //     observer.unobserve(entry.target);
             // }
-            entry.target.classList.remove("notransition")
-            observer.unobserve(entry.target);
+
 
         }
     })
 }
 
 const observer = new IntersectionObserver(animate);
-
 document.querySelectorAll(".animate__animated").forEach((el) => {
-        el.classList.add("notransition")
-        observer.observe(el);
-    }
-)
-
+    el.classList.add("notransition");
+})
 
 $(document).ready(function(){
     $('#review-carousel').owlCarousel({
@@ -118,6 +136,13 @@ $(document).ready(function(){
         dots: true,
         autoHeight:true,
     });
+
+    document.querySelectorAll(".animate__animated").forEach((el) => {
+            observer.observe(el);
+        }
+    )
+    setTimeout(() => document.getElementById("dummy").remove(), 500)
+
 });
 
 
