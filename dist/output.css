@@ -2667,8 +2667,8 @@ video {
   height:1.5rem
 }
 
-.h-\[35vh\]{
-  height:35vh
+.h-\[40vh\]{
+  height:40vh
 }
 
 .h-full{
@@ -2677,6 +2677,10 @@ video {
 
 .h-screen{
   height:100vh
+}
+
+.\!w-auto{
+  width:auto !important
 }
 
 .w-3\/4{
@@ -3076,22 +3080,6 @@ video {
   text-align: center;
 }
 
-.carousel-img{
-  height:35vh;
-  -o-object-fit:cover;
-     object-fit:cover
-}
-
-@media (min-width: 1024px){
-  .carousel-img{
-    height:45vh
-  }
-}
-
-.carousel-img {
-  width: auto!important;
-}
-
 blockquote::before, blockquote::after {
   color: #c6c6c6;
   font-size: 2em;
@@ -3422,8 +3410,8 @@ blockquote:after {
     display:none
   }
 
-  .lg\:h-\[45vh\]{
-    height:45vh
+  .lg\:h-\[55vh\]{
+    height:55vh
   }
 
   .lg\:h-auto{

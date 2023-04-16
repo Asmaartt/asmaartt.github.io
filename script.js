@@ -83,6 +83,8 @@ $(document).ready(function(){
         autoplayHoverPause:false,
         center: true,
         dots:false,
+        margin: 0,
+        singleItem: true,
         responsiveClass: true,
         responsive : {
             0: {
@@ -91,7 +93,7 @@ $(document).ready(function(){
             768: {
                 items:3
             },
-            1024: {
+            1800: {
                 items: 4
             }
         }
