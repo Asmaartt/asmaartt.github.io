@@ -81,6 +81,7 @@ $(document).ready(function(){
         autoplay:true,
         autoplayTimeout:5000,
         autoplayHoverPause:false,
+        center: true,
         dots:false,
         responsiveClass: true,
         responsive : {
