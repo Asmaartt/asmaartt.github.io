@@ -141,8 +141,6 @@ $(document).ready(function(){
             observer.observe(el);
         }
     )
-    setTimeout(() => document.getElementById("dummy").remove(), 500)
-
 });
 
 
