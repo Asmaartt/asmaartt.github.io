@@ -2,7 +2,7 @@ mkdir -p public/dist
 cp orpheus.ttf public/dist/orpheus.ttf
 touch public/.nojekyll
 npx tailwindcss -i ./src/input.css -o ./public/dist/output.css
-cp ./public/dist/output.css ./dist/output.css
+#cp ./public/dist/output.css ./dist/output.css
 cp hamburgers.css public/dist/hamburgers.css
 cp script.js public/script.js
 node image_compress.js
