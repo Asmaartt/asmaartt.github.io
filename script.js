@@ -78,12 +78,22 @@ $(document).ready(function(){
 
     $('#main-carousel').owlCarousel({
         loop:true,
-        autoWidth:true,
         autoplay:true,
         autoplayTimeout:5000,
         autoplayHoverPause:false,
-        center:true,
         dots:false,
+        responsiveClass: true,
+        responsive : {
+            0: {
+                items: 2
+            },
+            768: {
+                items:3
+            },
+            1024: {
+                items: 4
+            }
+        }
     });
 
     $(".gallery-carousel").owlCarousel({
