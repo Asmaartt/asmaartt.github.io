@@ -28,24 +28,27 @@ function bioNext(caller) {
 function animate(entries) {
     entries.forEach((entry) => {
         if (entry.isIntersecting) {
-            const carousel = entry.target.querySelector(".gallery-carousel");
-            if (carousel !== null) {
-                $(carousel).owlCarousel({
-                    singleItem: true,
-                    loop: true,
-                    center: true,
-                    items: 1,
-                    dots: true,
-                    onInitialized: function () {
-                        carousel.classList.remove("!hidden");
-                        entry.target.classList.remove("notransition");
-                    }
-                });
-                observer.unobserve(entry.target);
-            } else {
-                entry.target.classList.remove("notransition")
-                observer.unobserve(entry.target);
-            }
+            // const carousel = entry.target.querySelector(".gallery-carousel");
+            // if (carousel !== null && entry.boundingClientRect.top > 0) {
+            //     $(carousel).owlCarousel({
+            //         singleItem: true,
+            //         loop: true,
+            //         center: true,
+            //         items: 1,
+            //         dots: true,
+            //         lazyLoad: true,
+            //         onInitialized: function () {
+            //             carousel.classList.remove("!hidden");
+            //             entry.target.classList.remove("notransition");
+            //         }
+            //     });
+            //     observer.unobserve(entry.target);
+            // } else {
+            //     entry.target.classList.remove("notransition")
+            //     observer.unobserve(entry.target);
+            // }
+            entry.target.classList.remove("notransition")
+            observer.unobserve(entry.target);
 
         }
     })
@@ -83,7 +86,15 @@ $(document).ready(function(){
         dots:false,
     });
 
-    //$(".gallery-carousel")
+    $(".gallery-carousel").owlCarousel({
+        singleItem: true,
+        loop: true,
+        center: true,
+        items: 1,
+        dots: true,
+        lazyLoad: true,
+        //lazyLoadEager: 2,
+    });
 
     $("#new-carousel").owlCarousel({
         stagePadding: 25,
