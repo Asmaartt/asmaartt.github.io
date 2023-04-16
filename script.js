@@ -93,7 +93,7 @@ $(document).ready(function(){
             768: {
                 items:3
             },
-            1800: {
+            1500: {
                 items: 4
             }
         }
