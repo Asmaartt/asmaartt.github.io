@@ -61,13 +61,6 @@ video {
     text-align: center;
 }
 
-.carousel-img {
-    @apply h-[35vh] lg:h-[45vh] object-cover;
-    width: auto!important;
-}
-
-
-
 blockquote::before, blockquote::after {
     color: #c6c6c6;
     font-size: 2em;
