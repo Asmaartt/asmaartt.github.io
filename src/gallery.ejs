@@ -32,7 +32,7 @@
         <h1 class="text-lg md:text-2xl lg:text-4xl font-bold text-center pt-4 pb-8 px-2 uppercase font-light">
              GALERIE
         </h1>
-        <div class="text-center text-lg lg:text-xl m-auto px-8 lg:px-32 animate__animated animate__zoomInDown" id="gallery-text">
+        <div class="text-center text-lg lg:text-xl m-auto px-8 lg:px-32 animate__animated animate__zoomInDown animate__slower" id="gallery-text">
             <%= text %>
         </div>
     </div>
@@ -40,14 +40,14 @@
     <div class=" md:max-w-[80%] mx-auto px-4 sm:px-6 lg:px-8 mt-10">
         <div class="grid grid-cols-1 md:grid-cols-2 gap-6" style="padding-left: 5px;">
             <% paints.forEach(function(paint, i) { %>
-            <div class="animate__animated <%= i % 2 === 0 ? "animate__fadeInTopLeft" : "animate__fadeInTopRight" %>">
+            <div class="animate__animated <%= i % 2 === 0 ? "animate__fadeInTopLeft" : "animate__fadeInTopRight" %> animate__slow">
                 <div class="gallery-item shadow-lg rounded-lg overflow-hidden relative max-w-[90vw] md:max-w-[35vw]">
                     <% if (paint.available) { %>
                         <div class="ribbon"><span style="color: #CDAC8C">DISPONIBLE</span></div>
                     <% } else { %>
                             <div class="ribbon"><span style="color: #8d8d8d">VENDU</span></div>
                     <%}%>
-                    <div class="gallery-carousel owl-carousel owl-theme">
+                    <div class="gallery-carousel owl-carousel owl-theme !hidden">
                         <% paint.pictures.forEach(function(picture) { %>
                             <a href="<%= picture %>" data-lightbox="gallery" data-title="<%= paint.description %>" class="block">
                                 <img class="object-cover object-center max-w-[90vw] md:max-w-[35vw]" src="<%= picture %>" alt="<%= paint.name %>" data-lightbox="gallery">
