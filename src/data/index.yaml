@@ -5,11 +5,10 @@ news:
   - /img/terredoree_1.JPG
   - /img/aquareflec_1.JPG
 images:
-  - /img/1.jpeg
-  - /img/1.jpeg
-  - /img/1.jpeg
-  - /img/1.jpeg
-  - /img/1.jpeg
+  - /img/image_1.jpg
+  - /img/image_2.jpg
+  - /img/image_3.jpg
+  - /img/image_4.jpg
 reviews:
   - name: Dorothée
     city: France
@@ -31,8 +30,8 @@ reviews:
     city: France
     picture: /img/judith.jpg
     review: Merci infiniment pour ce tableau, vous avez su suivre avec détails mes demandes et exigences. Une merveilleuse peinture. Merci pour votre temps et votre gentillesse !
-  - name: Jane Smith
-    city: New York City
-    picture: /img/placeholder.jpeg
-    review: I absolutely love this paint! The color is vibrant and it applies smoothly. I highly recommend it.
+  - name: Houdaifa
+    city: France
+    picture: /img/houdaifa.jpg
+    review: Meilleur achat en ligne que j'ai pu faire jusqu'à maintenant ! Il est carrément parfait ! 
 contact: Merci pour votre visite sur notre site ! Si vous avez des questions, souhaitez passer une commande personalisée ou faire un achat d'une toile en ligne, n'hésitez pas à me contacter en utilisant le formulaire ci-dessous. Vous pouvez également vous tenir à jour des dernières nouveautés sur Instagram @asmaart ! Au plaisir de répondre à vos demandes !
