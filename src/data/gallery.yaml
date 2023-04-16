@@ -143,14 +143,18 @@ paints:
       - /img/volcan_2.JPG
       - /img/volcan_3.JPG
     available: true
-  - name: grace
+  - name: Uni
     price: 70
-    description: The delicate pink hues of this paint capture the beauty of cherry blossoms in full bloom. Its smooth texture and vibrant color make it a great choice for creating beautiful floral paintings.
-    size: 16"x20"
+    description: |
+      Oeuvre d'art originale (2022)
+      Peinture acrylique sur toile.
+      Taille 61x50cm (profondeur 1,5cm)
+      Les contours sont peins en jaune. Signature en bas à droite.
+    size: 61"x50"
     pictures:
-      - https://fakeimg.pl/864x1080/
-      - https://fakeimg.pl/864x1080/
-      - https://fakeimg.pl/864x1080/
+      - /img/uni_1.JPG
+      - /img/uni_2.JPG
+      - /img/uni_3.JPG
     available: true
 
 contact:  Merci pour votre visite sur notre site ! Si vous avez des questions, souhaitez passer une commande personalisée ou faire un achat d'une toile en ligne, n'hésitez pas à me contacter en utilisant le formulaire ci-dessous. Vous pouvez également vous tenir à jour des dernières nouveautés sur Instagram @asmaart ! Au plaisir de répondre à vos demandes !
