@@ -41,16 +41,16 @@
         <div class="grid grid-cols-1 md:grid-cols-2 gap-6" style="padding-left: 5px;">
             <% paints.forEach(function(paint, i) { %>
             <div class="animate__animated <%= i % 2 === 0 ? "animate__fadeInTopLeft" : "animate__fadeInTopRight" %> animate__slow">
-                <div class="gallery-item shadow-lg rounded-lg overflow-hidden relative max-w-[90vw] md:max-w-[35vw]">
+                <div class="gallery-item shadow-lg rounded-lg overflow-hidden relative w-[90vw] md:w-[35vw]">
                     <% if (paint.available) { %>
                         <div class="ribbon"><span style="color: #CDAC8C">DISPONIBLE</span></div>
                     <% } else { %>
                             <div class="ribbon"><span style="color: #8d8d8d">VENDU</span></div>
                     <%}%>
-                    <div class="gallery-carousel owl-carousel owl-theme !hidden">
+                    <div class="gallery-carousel owl-carousel owl-theme">
                         <% paint.pictures.forEach(function(picture) { %>
                             <a href="<%= picture %>" data-lightbox="gallery" data-title="<%= paint.description %>" class="block">
-                                <img class="object-cover object-center max-w-[90vw] md:max-w-[35vw]" src="<%= picture %>" alt="<%= paint.name %>" data-lightbox="gallery">
+                                <img class="object-cover object-center w-[90vw] md:w-[35vw] owl-lazy" data-src="<%= picture %>" alt="<%= paint.name %>" data-lightbox="gallery">
                             </a>
                         <% }) %>
                     </div>
