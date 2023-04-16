@@ -2667,10 +2667,6 @@ video {
   height:1.5rem
 }
 
-.h-\[40vh\]{
-  height:40vh
-}
-
 .h-full{
   height:100%
 }
@@ -3408,10 +3404,6 @@ blockquote:after {
 
   .lg\:hidden{
     display:none
-  }
-
-  .lg\:h-\[55vh\]{
-    height:55vh
   }
 
   .lg\:h-auto{
