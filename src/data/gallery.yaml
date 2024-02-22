@@ -14,7 +14,7 @@ paints:
       - /img/cosmos_3.JPG
     available: true
   - name: Terre dorée
-    price: 550
+    price: 400
     description: |
       Oeuvre originale (2023)
       Peinture abstraite sur toile 3D, en reliefs et texturée. Bombe, poudre d'or, feuilles d'or, peinture acrylique, coulures, empatement.
@@ -27,7 +27,7 @@ paints:
       - /img/terredoree_3.JPG
     available: true
   - name: Aqua Réflection
-    price: 290
+    price: 280
     description: |
       Oeuvre d'art originale (2023)
       Peinture acrylique sur toile.
@@ -66,7 +66,7 @@ paints:
       - /img/eclipse_3.JPG
     available: true
   - name: Blessure profonde
-    price: 170
+    price: 90
     description: |
       Oeuvre d'art originale (2022)
       Peinture acrylique sur toile, en relief.
@@ -79,7 +79,7 @@ paints:
       - /img/blessure_3.JPG
     available: true
   - name: Eclat
-    price: 160
+    price: 150
     description: |
       Oeuvre d'art originale (2022)
       Peinture acrylique sur toile.
@@ -92,7 +92,7 @@ paints:
       - /img/eclat_3.JPG
     available: true
   - name: Ocean
-    price: 170
+    price: 150
     description: |
       Oeuvre d'art originale (2022)
       Peinture acrylique sur toile, en relief léger, texturé. Feuilles d'or, acrylique, empâtements.
@@ -118,7 +118,7 @@ paints:
       - /img/jaguard_3.JPG
     available: true
   - name: Balance des sentiments
-    price: 300
+    price: 290
     description: |
       Oeuvre d'art originale (2022)
       Peinture acrylique sur toile.
@@ -131,7 +131,7 @@ paints:
       - /img/balance_2.JPG
     available: true
   - name: Volcanilave
-    price: 200
+    price: 180
     description: |
       Oeuvre d'art originale (2022)
       Peinture acrylique sur toile, en relief, texturé. Empâtements, acrylique.
@@ -144,7 +144,7 @@ paints:
       - /img/volcan_3.JPG
     available: true
   - name: Uni
-    price: 150
+    price: 130
     description: |
       Oeuvre d'art originale (2022)
       Peinture acrylique sur toile.
