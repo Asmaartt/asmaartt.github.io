@@ -1,5 +1,29 @@
 text: Bienvenue dans la galerie de Asmaart. Vous y trouverez toutes ses oeuvres, passant par l'abstrait et le figuratif. Pleines de couleurs et de reliefs ! N'hesitez pas si vous avez des questions, un formulaire se trouve en bas de page. Asmaart se fera un plaisir de vous répondre.
 paints:
+  - name: Frontière
+    price: 280
+    description: |
+      Oeuvre d'art originale. (2023)
+      Peinture acrylique abstraite sur toile. Feuilles d'or.
+      Taille 60x80cm (profondeur 2,5cm) 
+      Les côtés sont peintes en noir. Signature au dos.
+    size: 60"x80"
+    pictures:
+      - /img/frontiere1.JPEG
+      - /img/frontiere2.JPEG
+    available: true
+  - name: Emotion indéfini
+    price: 450
+    description: |
+      Oeuvre d'art originale. (2023)
+      Peinture acrylique abstraite sur toile.
+      Taille 100x82cm (profondeur 2,5cm) 
+      Les côtés sont peintes en noir. Signature au dos.
+    size: 100"x82"
+    pictures:
+      - /img/emotion1.JPEG
+      - /img/emotion2.JPEG
+    available: true
   - name: Cosmos
     price: 420
     description: |
