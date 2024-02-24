@@ -9,7 +9,7 @@ paints:
       Les côtés sont peintes en noir. Signature au dos.
     size: 60"x80"
     pictures:
-      - /img/frontiere1.jpeg
+      - /img/frontiere11.jpeg
       - /img/frontiere2.jpeg
     available: true
   - name: Emotion indéfini
@@ -22,7 +22,7 @@ paints:
     size: 100"x82"
     pictures:
       - /img/emotion1.jpeg
-      - /img/emotion2.jpeg
+      - /img/emotion22.jpeg
     available: true
   - name: Cosmos
     price: 420
