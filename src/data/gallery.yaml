@@ -75,7 +75,7 @@ paints:
       - /img/nebuleuse_1.JPG
       - /img/nebuleuse_2.JPG
       - /img/nebuleuse_3.JPG
-    available: true
+    available: false
   - name: Eclipse de bonheur
     price: 320
     description: |
@@ -166,7 +166,7 @@ paints:
       - /img/volcan_1.JPG
       - /img/volcan_2.JPG
       - /img/volcan_3.JPG
-    available: true
+    available: false
   - name: Uni
     price: 130
     description: |
