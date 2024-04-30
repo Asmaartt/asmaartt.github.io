@@ -4976,11 +4976,6 @@ blockquote:after {
     background-color:rgb(64 64 64 / var(--tw-bg-opacity))
   }
 
-  .dark\:text-neutral-500{
-    --tw-text-opacity:1;
-    color:rgb(115 115 115 / var(--tw-text-opacity))
-  }
-
   .dark\:text-white{
     --tw-text-opacity:1;
     color:rgb(255 255 255 / var(--tw-text-opacity))
