@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artiste Peintre Autodidacte - Peinture Personalisée</title>
+    <link href="/dist/output.css" rel="stylesheet">
+    <link href="/dist/hamburgers.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Montserrat&family=Noto+Serif&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="node_modules/owl.carousel/dist/assets/owl.carousel.min.css" />
+    <link rel="stylesheet" href="node_modules/owl.carousel/dist/assets/owl.theme.default.min.css" />
+    <meta name="title" content="Asmaart - Artiste Peintre Autodidacte">
+    <meta name="description" content="Asmaart est le site d'une artiste peintre autodidacte passionnée, offrant une galerie complète de ses œuvres originales vibrantes et colorées.">
+    <meta name="keywords" content="Artiste peintre autodidacte,Peintures vibrantes,Galerie d'art en ligne,Œuvres d'art originales,Techniques de peinture,Inspiration artistique,Couleurs vives,Aquarelles et huiles">
+    <meta name="robots" content="index, follow">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="language" content="French">
+    <meta name="author" content="Asmaart">
+    <%- include('background') %>
+</head>
+<body>
+
+<%- include('navigation') %>
+
+<main class="relative text-white">
+    <div class="">
+        <h2 class="text-lg md:text-2xl lg:text-4xl font-bold text-center pt-8 pb-4 px-2 uppercase font-light">
+            PEINTURE PERSONALISÉE
+        </h2>
+        <div id="bio" class="lg:w-1/2 text-center text-lg lg:text-xl m-auto px-8 animate__animated animate__zoomInDown animate__slower">
+            <span class="md:inline"><%= text %></span>
+        </div>
+        <div id="main-carousel-container" class="pt-4 md:pt-20">
+                <div id="main-carousel" class="owl-carousel owl-theme py-4">
+                    <% images.forEach(function(path) { %>
+                        <img class=" object-cover !w-auto" src="<%= path %>">
+                    <% }) %>
+                </div>
+        </div>
+    </div>
+
+    <div class="">
+        <h2 class="text-lg md:text-2xl lg:text-4xl font-bold text-center pt-8 pb-4 px-2 uppercase font-light">
+            COMMENT PASSER COMMANDE ?
+        </h2>
+        <!-- Stepper -->
+        <ul class="relative flex flex-col md:flex-row gap-2 m-auto px-8">
+            <% steps.forEach((step, index) => { %>
+                <!-- Item -->
+                <li class="md:shrink md:basis-0 flex-1 group flex gap-x-2 md:block">
+                    <div class="min-w-7 min-h-7 flex flex-col items-center md:w-full md:inline-flex md:flex-wrap md:flex-row text-xs align-middle">
+                <span class="h-8 w-8 mx-2 text-2xl flex justify-center items-center flex-shrink-0 font-medium text-gray-800 rounded-full dark:bg-neutral-700 dark:text-white" style="background-color: rgba(205, 172, 140, 0.9);">
+                    <%= index + 1 %>
+                </span>
+                        <div class="mt-2 w-px h-full md:mt-0 md:ms-2 md:w-full md:h-px md:flex-1 bg-black group-last:hidden dark:bg-neutral-700"></div>
+                    </div>
+                    <div class="grow md:grow-0 md:mt-3 pb-5">
+                <span class="block text-2xl font-medium text-gray-800 dark:text-white text-2xl">
+                    Étape <%= index + 1 %>
+                </span>
+                        <p class="text-lg text-gray-800 dark:text-neutral-500">
+                            <%= step %>
+                        </p>
+                    </div>
+                </li>
+            <% }); %>
+        </ul>
+    </div>
+
+    <div class="mt-10">
+        <h2 class="text-lg md:text-2xl lg:text-4xl font-bold text-center pt-4 pb-8 px-2 uppercase font-light" id="contact">
+            CONTACT
+        </h2>
+        <p class="p-4 lg:px-32 text-center font-bold contact text-lg lg:text-xl animate__animated animate__pulse animate__repeat-3">
+            <%= contact %>
+        </p>
+    </div>
+
+
+    <%- include('contact') %>
+
+</main>
+
+<script src="https://kit.fontawesome.com/e04d7c62a8.js" crossorigin="anonymous"></script>
+<script src="/node_modules/jquery/dist/jquery.js"></script>
+<script src="/node_modules/owl.carousel/dist/owl.carousel.min.js"></script>
+<script src="../script.js"></script>
+</body>
+</html>
