@@ -1,7 +1,7 @@
 text: Bienvenue dans la galerie de Asmaart. Vous y trouverez toutes ses oeuvres, passant par l'abstrait et le figuratif. Pleines de couleurs et de reliefs ! N'hesitez pas si vous avez des questions, un formulaire se trouve en bas de page. Asmaart se fera un plaisir de vous répondre.
 paints:
   - name: Frontière
-    price: 280
+    price: 250
     description: |
       Oeuvre d'art originale. (2023)
       Peinture acrylique abstraite sur toile. Feuilles d'or.
@@ -13,7 +13,7 @@ paints:
       - /img/frontiere2.jpeg
     available: true
   - name: Emotion indéfini
-    price: 450
+    price: 400
     description: |
       Oeuvre d'art originale. (2023)
       Peinture acrylique abstraite sur toile.
@@ -38,7 +38,7 @@ paints:
       - /img/cosmos_3.JPG
     available: true
   - name: Terre dorée
-    price: 400
+    price: 310
     description: |
       Oeuvre originale (2023)
       Peinture abstraite sur toile 3D, en reliefs et texturée. Bombe, poudre d'or, feuilles d'or, peinture acrylique, coulures, empatement.
@@ -77,7 +77,7 @@ paints:
       - /img/nebuleuse_3.JPG
     available: false
   - name: Eclipse de bonheur
-    price: 320
+    price: 300
     description: |
       Oeuvre d'art originale (2022)
       Peinture acrylique sur toile.
@@ -90,7 +90,7 @@ paints:
       - /img/eclipse_3.JPG
     available: true
   - name: Blessure profonde
-    price: 90
+    price: 40
     description: |
       Oeuvre d'art originale (2022)
       Peinture acrylique sur toile, en relief.
@@ -103,7 +103,7 @@ paints:
       - /img/blessure_3.JPG
     available: true
   - name: Eclat
-    price: 150
+    price: 140
     description: |
       Oeuvre d'art originale (2022)
       Peinture acrylique sur toile.
@@ -116,7 +116,7 @@ paints:
       - /img/eclat_3.JPG
     available: true
   - name: Ocean
-    price: 150
+    price: 140
     description: |
       Oeuvre d'art originale (2022)
       Peinture acrylique sur toile, en relief léger, texturé. Feuilles d'or, acrylique, empâtements.
@@ -129,7 +129,7 @@ paints:
       - /img/ocean_3.JPG
     available: true
   - name: Jaguard
-    price: 485
+    price: 400
     description: |
       Oeuvre d'art originale (2022)
       Peinture acrylique sur toile.
@@ -142,7 +142,7 @@ paints:
       - /img/jaguard_3.JPG
     available: true
   - name: Balance des sentiments
-    price: 290
+    price: 250
     description: |
       Oeuvre d'art originale (2022)
       Peinture acrylique sur toile.
@@ -155,7 +155,7 @@ paints:
       - /img/balance_2.JPG
     available: true
   - name: Volcanilave
-    price: 180
+    price: 220
     description: |
       Oeuvre d'art originale (2022)
       Peinture acrylique sur toile, en relief, texturé. Empâtements, acrylique.
@@ -168,7 +168,7 @@ paints:
       - /img/volcan_3.JPG
     available: false
   - name: Uni
-    price: 130
+    price: 100
     description: |
       Oeuvre d'art originale (2022)
       Peinture acrylique sur toile.
