@@ -20,11 +20,6 @@ function toggleMenu() {
     }
 }
 
-function bioNext(caller) {
-    document.getElementById("bio-next").classList.remove("hidden");
-    document.getElementById("bio-next-button").remove()
-}
-
 // function isElementAboveMiddle(rect) {
 //     // Calculate the vertical position of the middle of the viewport
 //     var viewportHeight = window.screen.availHeight;
@@ -38,48 +33,35 @@ function bioNext(caller) {
 //     }
 // }
 
-function animate(entries) {
+function animate(entries, observer) {
     entries.forEach((entry) => {
+        // When the element enters the viewport
         if (entry.isIntersecting) {
-            const carousel = entry.target.querySelector(".gallery-carousel");
-            if (carousel !== null /*&& isElementAboveMiddle(entry.boundingClientRect)*/) {
-                entry.target.classList.remove("invisible");
-                entry.target.classList.remove("notransition")
-                observer.unobserve(entry.target);
-            } else if (carousel === null) {
-                entry.target.classList.remove("notransition")
-                observer.unobserve(entry.target);
-            }
+            const target = entry.target;
 
-            // const carousel = entry.target.querySelector(".gallery-carousel");
-            // if (carousel !== null && entry.boundingClientRect.top > 0) {
-            //     $(carousel).owlCarousel({
-            //         singleItem: true,
-            //         loop: true,
-            //         center: true,
-            //         items: 1,
-            //         dots: true,
-            //         lazyLoad: true,
-            //         onInitialized: function () {
-            //             carousel.classList.remove("!hidden");
-            //             entry.target.classList.remove("notransition");
-            //         }
-            //     });
-            //     observer.unobserve(entry.target);
-            // } else {
-            //     entry.target.classList.remove("notransition")
-            //     observer.unobserve(entry.target);
-            // }
+            // 1. Remove "invisible" (Tailwind class) so the element is rendered
+            target.classList.remove("invisible");
 
+            // 2. Remove "notransition" to allow the Animate.css classes to fire
+            target.classList.remove("notransition");
 
+            // 3. Stop observing this specific element to save performance
+            observer.unobserve(target);
+
+            // Note: We don't need to manually check for 'carousel' here anymore
+            // because OwlCarousel is already initialized in $(document).ready()
         }
-    })
+    });
 }
+// Configuration for the observer
+const observerOptions = {
+    root: null, // Use the viewport as the container
+    rootMargin: '0px',
+    threshold: 0.15 // Trigger when 15% of the element is visible
+};
 
-const observer = new IntersectionObserver(animate);
-document.querySelectorAll(".animate__animated").forEach((el) => {
-    el.classList.add("notransition");
-})
+// Initialize the observer
+const observer = new IntersectionObserver(animate, observerOptions);
 
 $(document).ready(function(){
     $('#review-carousel').owlCarousel({
@@ -138,9 +120,36 @@ $(document).ready(function(){
     });
 
     document.querySelectorAll(".animate__animated").forEach((el) => {
-            observer.observe(el);
+        // Ensure they have the 'notransition' class before observing
+        // to prevent them from "flashing" before they are scrolled into view.
+        el.classList.add("notransition");
+        observer.observe(el);
+    });
+
+    // If there is a hash in the URL (e.g., #paint-cosmos)
+    if (window.location.hash) {
+        // 1. Decode the hash (handles %C3%A9 -> é)
+        const targetId = decodeURIComponent(window.location.hash.substring(1));
+        const targetElement = document.getElementById(targetId);
+
+        if (targetElement) {
+            // 2. Kill the observer logic immediately for this item
+            observer.unobserve(targetElement);
+
+            // 3. Force visibility (remove ALL animation hurdles)
+            targetElement.classList.remove("invisible", "notransition");
+            targetElement.style.visibility = "visible"; // Backup for Tailwind invisible
+            targetElement.style.opacity = "1";         // Backup for animate.css starting state
+
+            // 4. Scroll with a slight delay to allow the DOM to "settle"
+            setTimeout(() => {
+                const yOffset = -80; // Adjust this based on your header height
+                const y = targetElement.getBoundingClientRect().top + window.pageYOffset + yOffset;
+
+                window.scrollTo({top: y, behavior: 'smooth'});
+            }, 500);
         }
-    )
+    }
 });
 
 

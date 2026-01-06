@@ -2758,8 +2758,16 @@ video {
   margin-top:2.5rem
 }
 
+.mt-12{
+  margin-top:3rem
+}
+
 .mt-2{
   margin-top:0.5rem
+}
+
+.mt-3{
+  margin-top:0.75rem
 }
 
 .box-border{
@@ -2882,6 +2890,10 @@ video {
   height:1.5rem
 }
 
+.h-72{
+  height:18rem
+}
+
 .h-8{
   height:2rem
 }
@@ -2912,10 +2924,6 @@ video {
 
 .w-8{
   width:2rem
-}
-
-.w-\[90vw\]{
-  width:90vw
 }
 
 .w-full{
@@ -3286,6 +3294,10 @@ video {
   grid-template-columns:repeat(1, minmax(0, 1fr))
 }
 
+.grid-cols-2{
+  grid-template-columns:repeat(2, minmax(0, 1fr))
+}
+
 .flex-row{
   flex-direction:row
 }
@@ -3456,6 +3468,10 @@ video {
 
 .gap-2{
   gap:0.5rem
+}
+
+.gap-4{
+  gap:1rem
 }
 
 .gap-6{
@@ -4008,6 +4024,10 @@ video {
   padding:0.25rem
 }
 
+.p-2{
+  padding:0.5rem
+}
+
 .p-4{
   padding:1rem
 }
@@ -4263,8 +4283,17 @@ video {
   letter-spacing:0.025em
 }
 
+.tracking-wider{
+  letter-spacing:0.05em
+}
+
 .text-\[\#336699\]\/\[\.35\]{
   color:rgb(51 102 153 / .35)
+}
+
+.text-black{
+  --tw-text-opacity:1;
+  color:rgb(0 0 0 / var(--tw-text-opacity))
 }
 
 .text-blue-500{
@@ -4493,6 +4522,18 @@ video {
   box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)
 }
 
+.shadow-md{
+  --tw-shadow:0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored:0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
+  box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)
+}
+
+.shadow-sm{
+  --tw-shadow:0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --tw-shadow-colored:0 1px 2px 0 var(--tw-shadow-color);
+  box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)
+}
+
 .outline-none{
   outline:2px solid transparent;
   outline-offset:2px
@@ -4608,6 +4649,16 @@ video {
   transition-duration:150ms
 }
 
+.transition-transform{
+  transition-property:transform;
+  transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration:150ms
+}
+
+.duration-500{
+  transition-duration:500ms
+}
+
 .ease-in{
   transition-timing-function:cubic-bezier(0.4, 0, 1, 1)
 }
@@ -4644,6 +4695,13 @@ video {
 
 html {
   scroll-behavior: smooth;
+}
+
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+  /* This prevents the "bounce" effect on some mobile browsers */
+  position: relative;
 }
 
 nav, #contact-button, #menu-container {
@@ -4705,7 +4763,7 @@ video {
 
 blockquote::before, blockquote::after {
   color: #c6c6c6;
-  font-size: 2em;
+  font-size: 1.5em;
   font-weight: 400;
   line-height: 0.1em;
 }
@@ -4974,6 +5032,12 @@ blockquote:after {
   display:none
 }
 
+.group:hover .group-hover\:scale-110{
+  --tw-scale-x:1.1;
+  --tw-scale-y:1.1;
+  transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))
+}
+
 @media (prefers-color-scheme: dark){
   .dark\:bg-neutral-700{
     --tw-bg-opacity:1;
@@ -5033,10 +5097,6 @@ blockquote:after {
 
   .md\:\!hidden{
     display:none !important
-  }
-
-  .md\:hidden{
-    display:none
   }
 
   .md\:h-px{
@@ -5116,6 +5176,16 @@ blockquote:after {
   .md\:text-2xl{
     font-size:1.5rem;
     line-height:2rem
+  }
+
+  .md\:text-base{
+    font-size:1rem;
+    line-height:1.5rem
+  }
+
+  .md\:text-lg{
+    font-size:1.125rem;
+    line-height:1.75rem
   }
 
   .md\:text-xl{

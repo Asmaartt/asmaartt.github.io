@@ -70,55 +70,136 @@
         <div class="lg:w-1/2 animate__animated animate__zoomIn">
             <img id="main-img" src="/img/profile.jpeg" class="px-24 pb-4 mx-auto lg:py-10 max-w-[23rem] lg:max-w-xl" style="border-radius: 50%">
         </div>
-        <div id="bio" class="lg:w-1/2 text-center text-lg lg:text-xl m-auto px-8 lg:pl-32 lg:pr-0 animate__animated animate__zoomInDown animate__slower">
-            <span>« L’orient comme souffle, la matière comme language. »</span> <span class="hidden md:inline" id="bio-next">Asmaart</span><a class="md:hidden" href="#" onclick="bioNext()" id="bio-next-button" style="color: #CDAC8C">Lire la suite...</a>
+        <div id="bio" class="lg:w-1/2 text-center text-lg lg:text-2xl m-auto px-8 lg:pl-32 lg:pr-0">
+            <div>
+                <span class="text-balance italic">« L’orient comme souffle, la matière comme language. »</span>
+                <br>
+                <span>Asmaart.</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="mt-12">
+        <h2 class="text-lg md:text-2xl lg:text-4xl font-bold text-center pt-8 pb-4 px-2 uppercase font-light">
+            DERNIÈRES NOUVEAUTÉS
+        </h2>
+        <div class="px-4">
+            <div id="new-carousel" class="owl-carousel owl-theme md:!hidden">
+                
+                    <a href="gallery.html#paint-frontière" class="px-2 block">
+                        <img class="rounded-lg shadow-sm" src="/img/frontiere11.jpeg" alt="Frontière">
+                        <div class="text-center mt-2 text-black">
+                            <p class="font-semibold text-sm uppercase">Frontière</p>
+                            <p class="text-xs text-gray-500">250€</p>
+                        </div>
+                    </a>
+                
+                    <a href="gallery.html#paint-emotion-indéfini" class="px-2 block">
+                        <img class="rounded-lg shadow-sm" src="/img/emotion1.jpeg" alt="Emotion indéfini">
+                        <div class="text-center mt-2 text-black">
+                            <p class="font-semibold text-sm uppercase">Emotion indéfini</p>
+                            <p class="text-xs text-gray-500">400€</p>
+                        </div>
+                    </a>
+                
+                    <a href="gallery.html#paint-cosmos" class="px-2 block">
+                        <img class="rounded-lg shadow-sm" src="/img/cosmos_1.JPG" alt="Cosmos">
+                        <div class="text-center mt-2 text-black">
+                            <p class="font-semibold text-sm uppercase">Cosmos</p>
+                            <p class="text-xs text-gray-500">420€</p>
+                        </div>
+                    </a>
+                
+                    <a href="gallery.html#paint-terre-dorée" class="px-2 block">
+                        <img class="rounded-lg shadow-sm" src="/img/terredoree_1.JPG" alt="Terre dorée">
+                        <div class="text-center mt-2 text-black">
+                            <p class="font-semibold text-sm uppercase">Terre dorée</p>
+                            <p class="text-xs text-gray-500">310€</p>
+                        </div>
+                    </a>
+                
+            </div>
+
+            <div class="hidden md:flex justify-between gap-4">
+                
+                    <a href="gallery.html#paint-frontière" class="flex-1 group block">
+                        <div class="overflow-hidden rounded-lg shadow-md">
+                            <img class="w-full h-72 object-cover transition-transform duration-500 group-hover:scale-110"
+                                 src="/img/frontiere11.jpeg"
+                                 alt="Frontière">
+                        </div>
+                        <div class="text-center mt-3 text-black">
+                            <h3 class="font-bold text-lg uppercase tracking-wider">Frontière</h3>
+                            <p class="text-gray-600">250€</p>
+                        </div>
+                    </a>
+                
+                    <a href="gallery.html#paint-emotion-indéfini" class="flex-1 group block">
+                        <div class="overflow-hidden rounded-lg shadow-md">
+                            <img class="w-full h-72 object-cover transition-transform duration-500 group-hover:scale-110"
+                                 src="/img/emotion1.jpeg"
+                                 alt="Emotion indéfini">
+                        </div>
+                        <div class="text-center mt-3 text-black">
+                            <h3 class="font-bold text-lg uppercase tracking-wider">Emotion indéfini</h3>
+                            <p class="text-gray-600">400€</p>
+                        </div>
+                    </a>
+                
+                    <a href="gallery.html#paint-cosmos" class="flex-1 group block">
+                        <div class="overflow-hidden rounded-lg shadow-md">
+                            <img class="w-full h-72 object-cover transition-transform duration-500 group-hover:scale-110"
+                                 src="/img/cosmos_1.JPG"
+                                 alt="Cosmos">
+                        </div>
+                        <div class="text-center mt-3 text-black">
+                            <h3 class="font-bold text-lg uppercase tracking-wider">Cosmos</h3>
+                            <p class="text-gray-600">420€</p>
+                        </div>
+                    </a>
+                
+                    <a href="gallery.html#paint-terre-dorée" class="flex-1 group block">
+                        <div class="overflow-hidden rounded-lg shadow-md">
+                            <img class="w-full h-72 object-cover transition-transform duration-500 group-hover:scale-110"
+                                 src="/img/terredoree_1.JPG"
+                                 alt="Terre dorée">
+                        </div>
+                        <div class="text-center mt-3 text-black">
+                            <h3 class="font-bold text-lg uppercase tracking-wider">Terre dorée</h3>
+                            <p class="text-gray-600">310€</p>
+                        </div>
+                    </a>
+                
+            </div>
         </div>
     </div>
 
     <div class="">
         <h2 class="text-lg md:text-2xl lg:text-4xl font-bold text-center pt-8 pb-4 px-2 uppercase font-light">
-            DERNIÈRES NOUVEAUTÉS
+            Reproductions
         </h2>
-        <div class="animate__animated animate__zoomIn animate__slower">
-            <a href="gallery.html">
-                <div id="new-carousel" class="owl-carousel owl-theme md:!hidden">
-                    
-                        <img class="px-2" src="/img/IMG_6546.jpeg">
-                    
-                        <img class="px-2" src="/img/IMG_6545.jpeg">
-                    
-                        <img class="px-2" src="/img/IMG_6544.jpeg">
-                    
-                        <img class="px-2" src="/img/IMG_6543.jpeg">
-                    
-                </div>
-                <div class="justify-between hidden md:flex">
-                    
-                        <img class="px-2" style="width: calc(100% / 4)" src="/img/IMG_6546.jpeg">
-                    
-                        <img class="px-2" style="width: calc(100% / 4)" src="/img/IMG_6545.jpeg">
-                    
-                        <img class="px-2" style="width: calc(100% / 4)" src="/img/IMG_6544.jpeg">
-                    
-                        <img class="px-2" style="width: calc(100% / 4)" src="/img/IMG_6543.jpeg">
-                    
-                </div>
-            </a>
-        </div>
-    </div>
-
-
-    <div class="">
         <div id="main-carousel-container" class="pt-4 md:pt-20">
                 <div id="main-carousel" class="owl-carousel owl-theme py-4">
                     
-                        <img class=" object-cover !w-auto" src="/img/IMG_6546.jpeg">
+                        <div>
+                            <img class=" object-cover !w-auto" src="/img/IMG_6546.jpeg">
+                            <p class="text-gray-600 text-xs md:text-base text-center">99€</p>
+                        </div>
                     
-                        <img class=" object-cover !w-auto" src="/img/IMG_6545.jpeg">
+                        <div>
+                            <img class=" object-cover !w-auto" src="/img/IMG_6545.jpeg">
+                            <p class="text-gray-600 text-xs md:text-base text-center">99€</p>
+                        </div>
                     
-                        <img class=" object-cover !w-auto" src="/img/IMG_6544.jpeg">
+                        <div>
+                            <img class=" object-cover !w-auto" src="/img/IMG_6544.jpeg">
+                            <p class="text-gray-600 text-xs md:text-base text-center">99€</p>
+                        </div>
                     
-                        <img class=" object-cover !w-auto" src="/img/IMG_6543.jpeg">
+                        <div>
+                            <img class=" object-cover !w-auto" src="/img/IMG_6543.jpeg">
+                            <p class="text-gray-600 text-xs md:text-base text-center">99€</p>
+                        </div>
                     
                 </div>
         </div>
@@ -129,7 +210,7 @@
     <h2 class="text-lg md:text-2xl lg:text-4xl font-bold text-center pt-12 pb-8 px-2 uppercase font-light">
         AVIS CLIENTS
     </h2>
-    <div class="animate__animated animate__delay-1s animate__backInUp">
+    <div class="animate__animated animate__delay-1s animate__fadeInLeft">
         <div id="review-carousel" class="owl-carousel owl-theme relative">
 
             
@@ -143,8 +224,8 @@
                                 <h3 class="text-3xl font-semibold">Dorothée</h3>
                                 <p class="text-gray-600">France</p>
                             </div>
-                            <div class="md:text-xl text-gray-800 relative">
-                                <blockquote>Je l&#39;ai offert hier à ma fille, elle est ravie. Je vous remercie pour ce joli tableau.</blockquote>
+                            <div class="text-sm md:text-xl text-gray-800 relative">
+                                <blockquote><span class="text-balance">Je l&#39;ai offert hier à ma fille, elle est ravie. Je vous remercie pour ce joli tableau.</span></blockquote>
                             </div>
                         </div>
                     </div>
@@ -160,8 +241,8 @@
                                 <h3 class="text-3xl font-semibold">Sandra</h3>
                                 <p class="text-gray-600">France</p>
                             </div>
-                            <div class="md:text-xl text-gray-800 relative">
-                                <blockquote>Peinture à la hauteur des attentes, tu as bien su comprendre ce que je cherchais à transmettre. Je te recommande !</blockquote>
+                            <div class="text-sm md:text-xl text-gray-800 relative">
+                                <blockquote><span class="text-balance">Peinture à la hauteur des attentes, tu as bien su comprendre ce que je cherchais à transmettre. Je te recommande !</span></blockquote>
                             </div>
                         </div>
                     </div>
@@ -177,8 +258,8 @@
                                 <h3 class="text-3xl font-semibold">Laurent</h3>
                                 <p class="text-gray-600">France</p>
                             </div>
-                            <div class="md:text-xl text-gray-800 relative">
-                                <blockquote>Belle surprise pour ma mère. Très satisfait, mieux que je l&#39;imaginais !</blockquote>
+                            <div class="text-sm md:text-xl text-gray-800 relative">
+                                <blockquote><span class="text-balance">Belle surprise pour ma mère. Très satisfait, mieux que je l&#39;imaginais !</span></blockquote>
                             </div>
                         </div>
                     </div>
@@ -194,8 +275,8 @@
                                 <h3 class="text-3xl font-semibold">Amine</h3>
                                 <p class="text-gray-600">France</p>
                             </div>
-                            <div class="md:text-xl text-gray-800 relative">
-                                <blockquote>Bravo à toi pour ce tableau et merci il est top. Comme je voulais, rien à dire, j&#39;hésiterai pas revenir vers toi si besoin et tu es aussi très sympa.</blockquote>
+                            <div class="text-sm md:text-xl text-gray-800 relative">
+                                <blockquote><span class="text-balance">Bravo à toi pour ce tableau et merci il est top. Comme je voulais, rien à dire, j&#39;hésiterai pas revenir vers toi si besoin et tu es aussi très sympa.</span></blockquote>
                             </div>
                         </div>
                     </div>
@@ -211,8 +292,8 @@
                                 <h3 class="text-3xl font-semibold">Judith</h3>
                                 <p class="text-gray-600">France</p>
                             </div>
-                            <div class="md:text-xl text-gray-800 relative">
-                                <blockquote>Merci infiniment pour ce tableau, vous avez su suivre avec détails mes demandes et exigences. Une merveilleuse peinture. Merci pour votre temps et votre gentillesse !</blockquote>
+                            <div class="text-sm md:text-xl text-gray-800 relative">
+                                <blockquote><span class="text-balance">Merci infiniment pour ce tableau, vous avez su suivre avec détails mes demandes et exigences. Une merveilleuse peinture. Merci pour votre temps et votre gentillesse !</span></blockquote>
                             </div>
                         </div>
                     </div>
@@ -228,8 +309,8 @@
                                 <h3 class="text-3xl font-semibold">Houdaifa</h3>
                                 <p class="text-gray-600">France</p>
                             </div>
-                            <div class="md:text-xl text-gray-800 relative">
-                                <blockquote>Meilleur achat en ligne que j&#39;ai pu faire jusqu&#39;à maintenant ! Il est carrément parfait !</blockquote>
+                            <div class="text-sm md:text-xl text-gray-800 relative">
+                                <blockquote><span class="text-balance">Meilleur achat en ligne que j&#39;ai pu faire jusqu&#39;à maintenant ! Il est carrément parfait !</span></blockquote>
                             </div>
                         </div>
                     </div>
@@ -243,13 +324,13 @@
         <h2 class="text-lg md:text-2xl lg:text-4xl font-bold text-center pt-4 pb-8 px-2 uppercase font-light" id="contact">
             CONTACT
         </h2>
-        <p class="p-4 lg:px-32 text-center font-bold contact text-lg lg:text-xl animate__animated animate__pulse animate__repeat-3">
-            Une question, un projet ou une envie particulière ? N’hésitez pas à m’écrire via le formulaire ci-dessous.
+        <p class="p-4 lg:px-32 text-center font-bold contact text-md lg:text-xl">
+            Merci pour votre visite sur notre site ! Si vous avez des questions, souhaitez passer une commande personalisée ou faire un achat d&#39;une toile en ligne, n&#39;hésitez pas à me contacter en utilisant le formulaire ci-dessous. Vous pouvez également vous tenir à jour des dernières nouveautés sur Instagram @asmaart ! Au plaisir de répondre à vos demandes !
         </p>
     </div>
 
 
-    <form id="contact-form" action="https://api.web3forms.com/submit" method="POST" class="p-4 lg:px-32 lg:pb-10 animate__animated animate__delay-1s animate__zoomIn">
+    <form id="contact-form" action="https://api.web3forms.com/submit" method="POST" class="p-4 lg:px-32 lg:pb-10">
     <input type="hidden" name="access_key" value="04674b6d-d4e5-4c07-b44b-fcea80a58e3b">
     <div class="flex flex-wrap mb-6">
         <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
