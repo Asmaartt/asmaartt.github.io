@@ -9,7 +9,7 @@ cp -r node_modules public/node_modules
 
 cd src
 
-js-yaml data/index.yaml > index.json
+cat data/index.yaml data/gallery.yaml | js-yaml > index.json
 ejs index.ejs -f index.json -o ../public/index.html
 
 js-yaml data/gallery.yaml > gallery.json

@@ -31,34 +31,33 @@
         <h1 class="text-lg md:text-2xl lg:text-4xl font-bold text-center pt-4 pb-8 px-2 uppercase font-light">
              GALERIE
         </h1>
-        <div class="text-center text-lg lg:text-xl m-auto px-8 lg:px-32 animate__animated animate__zoomInDown animate__slower" id="gallery-text">
+        <div class="text-center text-md lg:text-xl m-auto px-8 lg:px-32 animate__animated animate__fadeInDown" id="gallery-text">
             <%= text %>
         </div>
     </div>
 
-    <div class=" md:max-w-[80%] mx-auto px-4 sm:px-6 lg:px-8 mt-10">
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-6" style="padding-left: 5px;">
+    <div class="md:max-w-[80%] mx-auto px-4 sm:px-6 lg:px-8 mt-10">
+        <div class="grid grid-cols-2 md:grid-cols-2 gap-4" style="padding-left: 5px;">
             <% paints.forEach(function(paint, i) { %>
-            <div class="animate__animated <%= i % 2 === 0 ? "animate__fadeInTopLeft" : "animate__fadeInTopRight" %> invisible">
-                <div class="gallery-item shadow-lg rounded-lg overflow-hidden relative w-[90vw] md:w-[35vw]">
-                    <% if (paint.available) { %>
-                        <div class="ribbon"><span style="color: #CDAC8C">DISPONIBLE</span></div>
-                    <% } else { %>
+                <div id="paint-<%= paint.name.toLowerCase().replace(/\s+/g, '-') %>" class="animate__animated <%= i % 2 === 0 ? "animate__fadeInTopLeft" : "animate__fadeInTopRight" %> invisible">
+                    <div class="gallery-item shadow-lg rounded-lg overflow-hidden relative w-full md:w-[35vw]">
+                        <% if (paint.available) { %>
+                            <div class="ribbon"><span style="color: #CDAC8C">DISPONIBLE</span></div>
+                        <% } else { %>
                             <div class="ribbon"><span style="color: #8d8d8d">VENDU</span></div>
-                    <%}%>
-                    <div class="gallery-carousel owl-carousel owl-theme">
-                        <% paint.pictures.forEach(function(picture) { %>
-                            <a href="<%= picture %>" data-lightbox="gallery" data-title="<%= paint.description %>" class="block">
-                                <img class="object-cover object-center w-[90vw] md:w-[35vw] owl-lazy" data-src="<%= picture %>" alt="<%= paint.name %>" data-lightbox="gallery">
-                            </a>
-                        <% }) %>
-                    </div>
-                    <div class="text-center">
-                        <h3 class="font-semibold text-lg mb-1 paint-name"><%= paint.name %></h3>
-                        <p class="text-gray-600 mb-2"><%= paint.size %> • <%= paint.price %>€</p>
+                        <%}%>
+                        <div class="gallery-carousel owl-carousel owl-theme">
+                            <% paint.pictures.forEach(function(picture) { %>
+                                <a href="<%= picture %>" data-lightbox="gallery" data-title="<%= paint.description %>" class="block">
+                                    <img class="object-cover object-center w-full md:w-[35vw] owl-lazy" data-src="<%= picture %>" alt="<%= paint.name %>" data-lightbox="gallery">
+                                </a>
+                            <% }) %>
+                        </div>
+                        <div class="text-center p-2"> <h3 class="font-semibold text-sm md:text-lg mb-1 paint-name"><%= paint.name %></h3>
+                            <p class="text-gray-600 text-xs md:text-base mb-2"><%= paint.size %> • <%= paint.price %>€</p>
+                        </div>
                     </div>
                 </div>
-            </div>
             <% }) %>
         </div>
     </div>
@@ -68,7 +67,7 @@
         <h2 class="text-lg md:text-2xl lg:text-4xl font-bold text-center pt-4 pb-8 px-2 uppercase font-light" id="contact">
             CONTACT
         </h2>
-        <p class="p-4 lg:px-32 text-center font-bold contact text-lg lg:text-xl animate__animated animate__pulse animate__repeat-3">
+        <p class="p-4 lg:px-32 text-center font-bold contact text-md lg:text-xl">
             <%= contact %>
         </p>
     </div>

@@ -1,14 +1,14 @@
 bio: « L’orient comme souffle, la matière comme language. »
-news:
-  - /img/IMG_6546.jpeg
-  - /img/IMG_6545.jpeg
-  - /img/IMG_6544.jpeg
-  - /img/IMG_6543.jpeg
-images:
-  - /img/IMG_6546.jpeg
-  - /img/IMG_6545.jpeg
-  - /img/IMG_6544.jpeg
-  - /img/IMG_6543.jpeg
+bionext:  Asmaart.
+reproductions:
+  - image: /img/IMG_6546.jpeg
+    price: 99
+  - image: /img/IMG_6545.jpeg
+    price: 99
+  - image: /img/IMG_6544.jpeg
+    price: 99
+  - image: /img/IMG_6543.jpeg
+    price: 99
 reviews:
   - name: Dorothée
     city: France
@@ -33,5 +33,4 @@ reviews:
   - name: Houdaifa
     city: France
     picture: /img/houdaifa.jpg
-    review: Meilleur achat en ligne que j'ai pu faire jusqu'à maintenant ! Il est carrément parfait ! 
-contact: Une question, un projet ou une envie particulière ? N’hésitez pas à m’écrire via le formulaire ci-dessous.
+    review: Meilleur achat en ligne que j'ai pu faire jusqu'à maintenant ! Il est carrément parfait !

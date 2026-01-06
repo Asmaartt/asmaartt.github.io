@@ -37,37 +37,61 @@
         <div class="lg:w-1/2 animate__animated animate__zoomIn">
             <img id="main-img" src="/img/profile.jpeg" class="px-24 pb-4 mx-auto lg:py-10 max-w-[23rem] lg:max-w-xl" style="border-radius: 50%">
         </div>
-        <div id="bio" class="lg:w-1/2 text-center text-lg lg:text-xl m-auto px-8 lg:pl-32 lg:pr-0 animate__animated animate__zoomInDown animate__slower">
-            <span><%= bio %></span> <span class="hidden md:inline" id="bio-next"><%= bionext %></span><a class="md:hidden" href="#" onclick="bioNext()" id="bio-next-button" style="color: #CDAC8C">Lire la suite...</a>
+        <div id="bio" class="lg:w-1/2 text-center text-lg lg:text-2xl m-auto px-8 lg:pl-32 lg:pr-0">
+            <div>
+                <span class="text-balance italic"><%= bio %></span>
+                <br>
+                <span><%= bionext %></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="mt-12">
+        <h2 class="text-lg md:text-2xl lg:text-4xl font-bold text-center pt-8 pb-4 px-2 uppercase font-light">
+            DERNIÈRES NOUVEAUTÉS
+        </h2>
+        <div class="px-4">
+            <div id="new-carousel" class="owl-carousel owl-theme md:!hidden">
+                <% paints.filter(p => p.available).slice(0, 4).forEach(function(paint) { %>
+                    <a href="gallery.html#paint-<%= paint.name.toLowerCase().replace(/\s+/g, '-') %>" class="px-2 block">
+                        <img class="rounded-lg shadow-sm" src="<%= paint.pictures[0] %>" alt="<%= paint.name %>">
+                        <div class="text-center mt-2 text-black">
+                            <p class="font-semibold text-sm uppercase"><%= paint.name %></p>
+                            <p class="text-xs text-gray-500"><%= paint.price %>€</p>
+                        </div>
+                    </a>
+                <% }) %>
+            </div>
+
+            <div class="hidden md:flex justify-between gap-4">
+                <% paints.filter(p => p.available).slice(0, 4).forEach(function(paint) { %>
+                    <a href="gallery.html#paint-<%= paint.name.toLowerCase().replace(/\s+/g, '-') %>" class="flex-1 group block">
+                        <div class="overflow-hidden rounded-lg shadow-md">
+                            <img class="w-full h-72 object-cover transition-transform duration-500 group-hover:scale-110"
+                                 src="<%= paint.pictures[0] %>"
+                                 alt="<%= paint.name %>">
+                        </div>
+                        <div class="text-center mt-3 text-black">
+                            <h3 class="font-bold text-lg uppercase tracking-wider"><%= paint.name %></h3>
+                            <p class="text-gray-600"><%= paint.price %>€</p>
+                        </div>
+                    </a>
+                <% }) %>
+            </div>
         </div>
     </div>
 
     <div class="">
         <h2 class="text-lg md:text-2xl lg:text-4xl font-bold text-center pt-8 pb-4 px-2 uppercase font-light">
-            DERNIÈRES NOUVEAUTÉS
+            Reproductions
         </h2>
-        <div class="animate__animated animate__zoomIn animate__slower">
-            <a href="gallery.html">
-                <div id="new-carousel" class="owl-carousel owl-theme md:!hidden">
-                    <% news.forEach(function(path) { %>
-                        <img class="px-2" src="<%= path %>">
-                    <% }) %>
-                </div>
-                <div class="justify-between hidden md:flex">
-                    <% news.forEach(function(path) { %>
-                        <img class="px-2" style="width: calc(100% / <%= news.length %>)" src="<%= path %>">
-                    <% }) %>
-                </div>
-            </a>
-        </div>
-    </div>
-
-
-    <div class="">
         <div id="main-carousel-container" class="pt-4 md:pt-20">
                 <div id="main-carousel" class="owl-carousel owl-theme py-4">
-                    <% images.forEach(function(path) { %>
-                        <img class=" object-cover !w-auto" src="<%= path %>">
+                    <% reproductions.forEach(function(r) { %>
+                        <div>
+                            <img class=" object-cover !w-auto" src="<%= r.image %>">
+                            <p class="text-gray-600 text-xs md:text-base text-center"><%= r.price %>€</p>
+                        </div>
                     <% }) %>
                 </div>
         </div>
@@ -78,7 +102,7 @@
     <h2 class="text-lg md:text-2xl lg:text-4xl font-bold text-center pt-12 pb-8 px-2 uppercase font-light">
         AVIS CLIENTS
     </h2>
-    <div class="animate__animated animate__delay-1s animate__backInUp">
+    <div class="animate__animated animate__delay-1s animate__fadeInLeft">
         <div id="review-carousel" class="owl-carousel owl-theme relative">
 
             <% reviews.forEach(function(review) { %>
@@ -92,8 +116,8 @@
                                 <h3 class="text-3xl font-semibold"><%= review.name %></h3>
                                 <p class="text-gray-600"><%= review.city %></p>
                             </div>
-                            <div class="md:text-xl text-gray-800 relative">
-                                <blockquote><%= review.review %></blockquote>
+                            <div class="text-sm md:text-xl text-gray-800 relative">
+                                <blockquote><span class="text-balance"><%= review.review %></span></blockquote>
                             </div>
                         </div>
                     </div>
@@ -107,7 +131,7 @@
         <h2 class="text-lg md:text-2xl lg:text-4xl font-bold text-center pt-4 pb-8 px-2 uppercase font-light" id="contact">
             CONTACT
         </h2>
-        <p class="p-4 lg:px-32 text-center font-bold contact text-lg lg:text-xl animate__animated animate__pulse animate__repeat-3">
+        <p class="p-4 lg:px-32 text-center font-bold contact text-md lg:text-xl">
             <%= contact %>
         </p>
     </div>
