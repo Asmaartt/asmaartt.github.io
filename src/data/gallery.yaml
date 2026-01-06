@@ -1,5 +1,17 @@
 text: Bienvenue dans la galerie de Asmaart.
 paints:
+  - name: Désert d’or
+    price: 
+    description: |
+      Oeuvre d'art originale. (2024)
+      Peinture acrylique figurative sur toile. 
+      Taille 55x38cm (profondeur 2,5cm) 
+      Les côtés sont peintes en noir. Signature au dos.
+    size: 55"x38"
+    pictures:
+      - /img/frontiere11.jpeg
+      - /img/frontiere2.jpeg
+    available: true
   - name: Frontière
     price: 250
     description: |
