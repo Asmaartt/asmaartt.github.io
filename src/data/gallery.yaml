@@ -33,6 +33,17 @@ paints:
     pictures:
       - /img/IMG_6545.jpeg
     available: true
+      - name: Sahaba
+    price: 220
+    description: |
+      Oeuvre d'art originale. (2022)
+      Peinture acrylique figurative sur toile. 
+      Taille 40x30cm (profondeur 2cm) 
+      Signature au dos.
+    size: 40"x30"
+    pictures:
+      - /img/IMG_6545.jpeg
+    available: true
   - name: Frontière
     price: 250
     description: |
