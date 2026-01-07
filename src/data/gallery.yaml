@@ -81,19 +81,6 @@ paints:
       - /img/cosmos_1.jpg
       - /img/cosmos_3.JPG
     available: true
-  - name: Terre dorée
-    price: 310
-    description: |
-      Oeuvre originale (2023)
-      Peinture abstraite sur toile 3D, en reliefs et texturée. Bombe, poudre d'or, feuilles d'or, peinture acrylique, coulures, empatement.
-      Taille 50x100cm (profondeur 3,5cm)
-      Les côtés sont peins en argent (haut) marron (bas). Signature au dos.
-    size: 50"x100"
-    pictures:
-      - /img/terredoree_1.JPG
-      - /img/terredoree_2.JPG
-      - /img/terredoree_3.JPG
-    available: true
   - name: Aqua Réflection
     price: 280
     description: |
@@ -107,19 +94,6 @@ paints:
       - /img/aquareflec_1.jpg
       - /img/aquareflec_3.JPG
     available: true
-  - name: Nébuleuse
-    price: 340
-    description:  |
-      Oeuvre d'art originale (2023)
-      Peinture sur toile en relief, texturé. Acrylique, coulures, empatements.
-      Toile 73x55cm (profondeur 2cm)
-      Les contours sont peins en noir. Signature au dos.
-    size: 73"x55"
-    pictures:
-      - /img/IMG_6736.jpeg
-      - /img/nebuleuse_2.JPG
-      - /img/nebuleuse_3.JPG
-    available: false
   - name: Eclipse de bonheur
     price: 300
     description: |
@@ -198,6 +172,19 @@ paints:
       - /img/balance_3.JPG
       - /img/balance_2.JPG
     available: true
+  - name: Terre dorée
+    price: 310
+    description: |
+      Oeuvre originale (2023)
+      Peinture abstraite sur toile 3D, en reliefs et texturée. Bombe, poudre d'or, feuilles d'or, peinture acrylique, coulures, empatement.
+      Taille 50x100cm (profondeur 3,5cm)
+      Les côtés sont peins en argent (haut) marron (bas). Signature au dos.
+    size: 50"x100"
+    pictures:
+      - /img/terredoree_1.JPG
+      - /img/terredoree_2.JPG
+      - /img/terredoree_3.JPG
+    available: true
   - name: Volcanilave
     price: 220
     description: |
@@ -224,5 +211,18 @@ paints:
       - /img/uni_2.JPG
       - /img/uni_3.JPG
     available: true
+  - name: Nébuleuse
+    price: 340
+    description:  |
+      Oeuvre d'art originale (2023)
+      Peinture sur toile en relief, texturé. Acrylique, coulures, empatements.
+      Toile 73x55cm (profondeur 2cm)
+      Les contours sont peins en noir. Signature au dos.
+    size: 73"x55"
+    pictures:
+      - /img/IMG_6736.jpeg
+      - /img/nebuleuse_2.JPG
+      - /img/nebuleuse_3.JPG
+    available: false
 
 contact:  Merci pour votre visite sur notre site ! Si vous avez des questions, souhaitez passer une commande personalisée ou faire un achat d'une toile en ligne, n'hésitez pas à me contacter en utilisant le formulaire ci-dessous. Vous pouvez également vous tenir à jour des dernières nouveautés sur Instagram @asmaart ! Au plaisir de répondre à vos demandes !
