@@ -157,9 +157,9 @@ paints:
       Les contours sont peins en bleu. Signature au dos.
     size: 46"x55"
     pictures:
+      - /img/IMG_6737.jpeg
       - /img/ocean_1.JPG
       - /img/ocean_2.JPG
-      - /img/ocean_3.JPG
     available: true
   - name: Jaguard
     price: 400
