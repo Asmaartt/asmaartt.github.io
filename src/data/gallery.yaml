@@ -131,9 +131,9 @@ paints:
       Les contours sont peins en beige (couleur de toile). Signature au dos.
     size: 46"x55"
     pictures:
+      - /img/IMG_6738.jpeg
       - /img/blessure_1.JPG
       - /img/blessure_2.JPG
-      - /img/blessure_3.JPG
     available: true
   - name: Eclat
     price: 140
