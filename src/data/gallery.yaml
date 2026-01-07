@@ -194,9 +194,9 @@ paints:
       Les contours sont peins en jaune. Signature en bas à droite.
     size: 61"x50"
     pictures:
+      - /img/IMG_6752.jpeg
       - /img/uni_1.JPG
       - /img/uni_2.JPG
-      - /img/uni_3.JPG
     available: true
   - name: Volcanilave
     price: 220
