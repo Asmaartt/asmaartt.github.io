@@ -118,9 +118,9 @@ paints:
       Les contours sont peins en noir. Signature sur la face, en bas à droite.
     size: 60"x80"
     pictures:
-      - /img/eclipse_1.JPG
+      - /img/IMG_6742.jpeg
       - /img/eclipse_2.JPG
-      - /img/eclipse_3.JPG
+      - /img/eclipse_1.JPG
     available: true
   - name: Blessure profonde
     price: 40
