@@ -144,8 +144,8 @@ paints:
       Les contours sont peins en vert. Signature sur la face, en bas à droite.
     size: 46"x55"
     pictures:
+      - /img/IMG_6739.jpeg
       - /img/eclat_1.JPG
-      - /img/eclat_2.JPG
       - /img/eclat_3.JPG
     available: true
   - name: Ocean
