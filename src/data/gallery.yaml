@@ -181,9 +181,9 @@ paints:
       Les contours sont peins en noir. Signature sur la face, en bas à droite.
     size: 40"x50"
     pictures:
+      - /img/IMG_6745.jpeg
       - /img/jaguard_1.JPG
       - /img/jaguard_2.JPG
-      - /img/jaguard_3.JPG
     available: true
   - name: Balance des sentiments
     price: 250
