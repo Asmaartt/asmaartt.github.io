@@ -185,19 +185,6 @@ paints:
       - /img/terredoree_2.JPG
       - /img/terredoree_3.JPG
     available: true
-  - name: Volcanilave
-    price: 220
-    description: |
-      Oeuvre d'art originale (2022)
-      Peinture acrylique sur toile, en relief, texturé. Empâtements, acrylique.
-      Taille 46x55cm (profondeur 1,7cm)
-      Les contours sont peins en gris foncé. Signature au dos.
-    size: 46"x55"
-    pictures:
-      - /img/volcan_1.JPG
-      - /img/volcan_2.JPG
-      - /img/volcan_3.JPG
-    available: false
   - name: Uni
     price: 100
     description: |
@@ -211,6 +198,19 @@ paints:
       - /img/uni_2.JPG
       - /img/uni_3.JPG
     available: true
+  - name: Volcanilave
+    price: 220
+    description: |
+      Oeuvre d'art originale (2022)
+      Peinture acrylique sur toile, en relief, texturé. Empâtements, acrylique.
+      Taille 46x55cm (profondeur 1,7cm)
+      Les contours sont peins en gris foncé. Signature au dos.
+    size: 46"x55"
+    pictures:
+      - /img/volcan_1.JPG
+      - /img/volcan_2.JPG
+      - /img/volcan_3.JPG
+    available: false
   - name: Nébuleuse
     price: 340
     description:  |
