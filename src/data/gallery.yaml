@@ -194,8 +194,8 @@ paints:
       Les contours sont peins en noir. Signature sur la face, en bas à droite.
     size: 30"x40"
     pictures:
+      - /img/IMG_6746.jpeg
       - /img/balance_3.JPG
-      - /img/balance_1.JPG
       - /img/balance_2.JPG
     available: true
   - name: Volcanilave
