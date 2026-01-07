@@ -42,8 +42,8 @@ paints:
       Les côtés sont peintes en noir. Signature au dos.
     size: 60"x80"
     pictures:
+      - /img/IMG_6740.jpeg
       - /img/frontiere11.jpeg
-      - /img/frontiere2.jpeg
     available: true
   - name: Emotion indéfini
     price: 400
