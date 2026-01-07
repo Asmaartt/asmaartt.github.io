@@ -33,7 +33,7 @@ paints:
     pictures:
       - /img/IMG_6545.jpeg
     available: true
-      - name: Sahaba
+  - name: Sahaba
     price: 220
     description: |
       Oeuvre d'art originale. (2022)
