@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biographie - Asmaart | Artiste Peintre Autodidacte</title>
+    <link href="/dist/output.css" rel="stylesheet">
+    <link href="/dist/hamburgers.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Montserrat&family=Noto+Serif&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="node_modules/owl.carousel/dist/assets/owl.carousel.min.css" />
+    <link rel="stylesheet" href="node_modules/owl.carousel/dist/assets/owl.theme.default.min.css" />
+    <meta name="title" content="Biographie - Asmaart | Artiste Peintre Autodidacte">
+    <meta name="description" content="Découvrez l'histoire d'Asma, artiste peintre autodidacte marocaine née en 1997, qui explore la matière, les textures et les symboles à travers ses œuvres acryliques.">
+    <meta name="keywords" content="Asmaart biographie,Artiste autodidacte,Peintre marocaine,Art contemporain,Peinture acrylique,Textures et reliefs">
+    <meta name="robots" content="index, follow">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="language" content="French">
+    <meta name="author" content="Asmaart">
+</head>
+<body>
+
+<%- include('navigation') %>
+
+<main class="relative text-white">
+    <div class="">
+        <h1 class="text-lg md:text-2xl lg:text-4xl font-bold text-center p-4 lg:px-32 uppercase font-light">
+            BIOGRAPHIE
+        </h1>
+
+        <div id="main-carousel-container" class="pt-4 ">
+            <div id="main-carousel" class="owl-carousel owl-theme py-4">
+                <% images.forEach(function(path) { %>
+                    <img class=" object-cover !w-auto" src="<%= path %>">
+                <% }) %>
+            </div>
+        </div>
+
+        <!-- Section biographie principale -->
+        <div class="lg:w-3/4 xl:w-2/3 m-auto pt-4 lg:px-32 animate__animated animate__fadeIn animate__slower">
+            <div class="text-lg lg:text-xl leading-relaxed">
+                <% biography.split('\n\n').forEach(function(paragraph) { %>
+                    <% if (paragraph.trim()) { %>
+                        <p class="text-justify md:text-center p-4"><%= paragraph %></p>
+                    <% } %>
+                <% }) %>
+            </div>
+        </div>
+
+
+    <!-- Section contact -->
+    <div class="mt-10">
+        <h2 class="text-lg md:text-2xl lg:text-4xl font-bold text-center pt-4 pb-8 px-2 uppercase font-light" id="contact">
+            CONTACT
+        </h2>
+        <p class="p-4 lg:px-32 text-center font-bold contact text-lg lg:text-xl">
+            <%= contact %>
+        </p>
+    </div>
+
+    <%- include('contact') %>
+
+</main>
+
+<script src="https://kit.fontawesome.com/e04d7c62a8.js" crossorigin="anonymous"></script>
+<script src="/node_modules/jquery/dist/jquery.js"></script>
+<script src="/node_modules/owl.carousel/dist/owl.carousel.min.js"></script>
+<script src="../script.js"></script>
+</body>
+</html>

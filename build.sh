@@ -18,6 +18,8 @@ ejs gallery.ejs -f gallery.json -o ../public/gallery.html
 js-yaml data/custom.yaml > custom.json
 ejs custom.ejs -f custom.json -o ../public/custom.html
 
+ejs bio.ejs -f custom.json -o ../public/bio.html
+
 cd ..
 
 npx tailwindcss -c tailwind.config.js -i ./src/input.css -o ./public/dist/output.css
