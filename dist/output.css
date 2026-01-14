@@ -4275,6 +4275,10 @@ video {
   font-variant-numeric:var(--tw-ordinal) var(--tw-slashed-zero) var(--tw-numeric-figure) var(--tw-numeric-spacing) var(--tw-numeric-fraction)
 }
 
+.leading-relaxed{
+  line-height:1.625
+}
+
 .leading-tight{
   line-height:1.25
 }
@@ -5173,6 +5177,10 @@ blockquote:after {
     padding-top:5rem
   }
 
+  .md\:text-center{
+    text-align:center
+  }
+
   .md\:text-2xl{
     font-size:1.5rem;
     line-height:2rem
@@ -5235,6 +5243,10 @@ blockquote:after {
 
   .lg\:w-1\/2{
     width:50%
+  }
+
+  .lg\:w-3\/4{
+    width:75%
   }
 
   .lg\:w-auto{
@@ -5309,5 +5321,11 @@ blockquote:after {
     .dark\:lg\:hover\:\[paint-order\:markers\]:hover{
       paint-order:markers
     }
+  }
+}
+
+@media (min-width: 1280px){
+  .xl\:w-2\/3{
+    width:66.666667%
   }
 }
