@@ -3,11 +3,15 @@ bionext:  Asmaart.
 reproductions:
   - image: /img/IMG_6546.jpeg
     price: 99
+    name: Peinture Personnalisée
   - image: /img/IMG_6545.jpeg
     price: 99
+    name: Peinture Personnalisée
   - image: /img/IMG_6544.jpeg
+    name: Peinture Personnalisée
     price: 99
   - image: /img/IMG_6543.jpeg
+    name: Peinture Personnalisée
     price: 99
 reviews:
   - name: Dorothée

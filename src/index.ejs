@@ -90,7 +90,10 @@
                     <% reproductions.forEach(function(r) { %>
                         <div>
                             <img class=" object-cover !w-auto" src="<%= r.image %>">
-                            <p class="text-gray-600 text-xs md:text-base text-center"><%= r.price %>€</p>
+                            <div class="text-center mt-2 text-black">
+                                <p class="font-semibold text-sm uppercase"><%= r.name %></p>
+                                <p class="text-sm text-gray-500"><%= r.price %>€</p>
+                            </div>
                         </div>
                     <% }) %>
                 </div>
