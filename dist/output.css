@@ -2890,10 +2890,6 @@ video {
   height:1.5rem
 }
 
-.h-72{
-  height:18rem
-}
-
 .h-8{
   height:2rem
 }
@@ -2904,6 +2900,10 @@ video {
 
 .h-screen{
   height:100vh
+}
+
+.max-h-\[75vh\]{
+  max-height:75vh
 }
 
 .\!w-auto{
@@ -2924,6 +2924,10 @@ video {
 
 .w-8{
   width:2rem
+}
+
+.w-auto{
+  width:auto
 }
 
 .w-full{
@@ -5091,16 +5095,8 @@ blockquote:after {
     display:inline
   }
 
-  .md\:flex{
-    display:flex
-  }
-
   .md\:inline-flex{
     display:inline-flex
-  }
-
-  .md\:\!hidden{
-    display:none !important
   }
 
   .md\:h-px{
@@ -5231,6 +5227,10 @@ blockquote:after {
 
   .lg\:flex{
     display:flex
+  }
+
+  .lg\:\!hidden{
+    display:none !important
   }
 
   .lg\:hidden{
