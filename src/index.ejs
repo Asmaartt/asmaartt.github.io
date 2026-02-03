@@ -51,7 +51,7 @@
             DERNIÈRES NOUVEAUTÉS
         </h2>
         <div class="px-4">
-            <div id="new-carousel" class="owl-carousel owl-theme md:!hidden">
+            <div id="new-carousel" class="owl-carousel owl-theme lg:!hidden">
                 <% paints.filter(p => p.available).slice(0, 4).forEach(function(paint) { %>
                     <a href="gallery.html#paint-<%= paint.name.toLowerCase().replace(/\s+/g, '-') %>" class="px-2 block">
                         <img class="rounded-lg shadow-sm" src="<%= paint.pictures[0] %>" alt="<%= paint.name %>">
@@ -63,11 +63,11 @@
                 <% }) %>
             </div>
 
-            <div class="hidden md:flex justify-between gap-4">
+            <div class="hidden lg:flex justify-between gap-4">
                 <% paints.filter(p => p.available).slice(0, 4).forEach(function(paint) { %>
                     <a href="gallery.html#paint-<%= paint.name.toLowerCase().replace(/\s+/g, '-') %>" class="flex-1 group block">
                         <div class="overflow-hidden rounded-lg shadow-md">
-                            <img class="w-full h-72 object-cover transition-transform duration-500 group-hover:scale-110"
+                            <img class="w-auto max-h-[75vh] object-cover transition-transform duration-500 group-hover:scale-110"
                                  src="<%= paint.pictures[0] %>"
                                  alt="<%= paint.name %>">
                         </div>
@@ -85,12 +85,13 @@
         <h2 class="text-lg md:text-2xl lg:text-4xl font-bold text-center pt-8 pb-4 px-2 uppercase font-light">
             Reproductions
         </h2>
-        <div id="main-carousel-container" class="pt-4 md:pt-20">
+        <div id="main-carousel-container" class="pt-4">
                 <div id="main-carousel" class="owl-carousel owl-theme py-4">
                     <% reproductions.forEach(function(r) { %>
                         <div>
                             <img class=" object-cover !w-auto" src="<%= r.image %>">
                             <div class="text-center mt-2 text-black">
+                                <p class="text-sm uppercase text-gray-500">REPRODUCTION</p>
                                 <p class="font-semibold text-sm uppercase"><%= r.name %></p>
                                 <p class="text-sm text-gray-500"><%= r.price %>€</p>
                             </div>
