@@ -1,7 +1,7 @@
 text: Bienvenue dans la galerie de Asmaart.
 paints:
   - name: Apaisement
-    price: 2400
+    price: 2200
     description: |
       Oeuvre d'art originale. (2024)
       Peinture acrylique figurative sur toile. 
@@ -12,7 +12,7 @@ paints:
       - /img/IMG_7199.png
     available: true
   - name: Intemporel
-    price: 1400
+    price: 1200
     description: |
       Oeuvre d'art originale. (2025)
       Peinture acrylique figurative sur toile. 
@@ -23,7 +23,7 @@ paints:
       - /img/IMG_6544.jpeg
     available: true
   - name: Exoria
-    price: 710
+    price: 680
     description: |
       Oeuvre d'art originale. (2024)
       Peinture acrylique figurative sur toile. 
@@ -34,7 +34,7 @@ paints:
       - /img/IMG_6546.jpeg
     available: true
   - name: Désert d’or
-    price: 610
+    price: 600
     description: |
       Oeuvre d'art originale. (2024)
       Peinture acrylique figurative sur toile. 
